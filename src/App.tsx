@@ -13,7 +13,7 @@ function App() {
         <Sidebar />
         <div className="adarsh-container">
           <Switch>
-            <Redirect from={INDEX_PAGE} to={HOME_PAGE} />
+            <Redirect exact from={INDEX_PAGE} to={HOME_PAGE} />
             <Route path={HOME_PAGE} component={HomePage} />
             <Route component={NotFoundPage} />
           </Switch>

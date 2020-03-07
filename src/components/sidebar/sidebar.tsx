@@ -21,7 +21,10 @@ const Sidebar = (props: ISidebar) => {
   return (
     <div id="adarsh-sidebar">
       <div className="header">
-        <div>A</div>
+        <div className="brand">
+          <span>A</span>
+          <span>K</span>
+        </div>
         <div>Adarsh</div>
       </div>
       <div className="navigation">

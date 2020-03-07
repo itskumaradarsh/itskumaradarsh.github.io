@@ -1,0 +1,18 @@
+@import '../../../styles/colors';
+
+#adarsh-button {
+  color: $white;
+  .button {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: inline-block;
+    padding: 8px 32px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      background: $primary-color;
+      color: $bg-color;
+    }
+  }
+}

@@ -14,10 +14,16 @@
     padding: 12px 0 6px;
     background: #080808;
     text-align: center;
-    > div:first-child {
+    .brand {
       color: $primary-color;
-      font-weight: 800;
       font-size: 32px;
+      font-family: 'Major Mono Display', monospace;
+      span:first-child {
+        color: $secondary-color;
+      }
+      span:last-child {
+        color: $primary-color;
+      }
     }
     > div:last-child {
       color: $white;
@@ -54,19 +60,6 @@
     }
     .active-link {
       color: $primary-color !important;
-    }
-
-    @keyframes scale-display {
-      0% {
-        opacity: 0;
-        transform: scale(0);
-        -webkit-transform: scale(0);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-        -webkit-transform: scale(1);
-      }
     }
   }
   .footer {

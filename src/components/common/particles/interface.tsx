@@ -1,3 +1,3 @@
 export interface IParticles {
-  type: 'bubble' | 'snow' | 'line' | 'code';
+  type: 'bubble' | 'snow' | 'line' | 'code' | 'polygon';
 }
