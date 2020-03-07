@@ -1,0 +1,88 @@
+@import '../../styles/colors';
+@import '../../styles/constants';
+
+#adarsh-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: $sidebar-bg-color;
+  width: $sidebar-width;
+  display: flex;
+  flex-direction: column;
+  .header {
+    padding: 12px 0 6px;
+    background: #080808;
+    text-align: center;
+    > div:first-child {
+      color: $primary-color;
+      font-weight: 800;
+      font-size: 32px;
+    }
+    > div:last-child {
+      color: $white;
+      font-weight: 300;
+      font-size: 12px;
+      font-family: 'La Belle Aurore', cursive;
+    }
+  }
+  .navigation {
+    flex: auto;
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: $sidebar-icon-color-inactive;
+      display: block;
+      padding: 8px 0;
+      &:hover {
+        color: $primary-color;
+      }
+      &:hover .hidden {
+        animation: scale-display 0.5s;
+        display: block;
+      }
+    }
+    .hidden {
+      display: none;
+      font-size: 16px;
+      font-style: italic;
+      font-family: 'La Belle Aurore', cursive;
+    }
+    .active-link {
+      color: $primary-color !important;
+    }
+
+    @keyframes scale-display {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+      }
+    }
+  }
+  .footer {
+    color: $sidebar-icon-color-inactive !important;
+    padding: 8px 0;
+    .button {
+      color: $sidebar-icon-color-inactive;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 4px 0;
+      cursor: pointer;
+      font-size: 14px;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

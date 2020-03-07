@@ -24,7 +24,7 @@ const bubbleParticle = () => {
           number: {
             value: 160,
             density: {
-              enable: false,
+              enable: true,
             },
           },
           size: {
@@ -47,10 +47,6 @@ const bubbleParticle = () => {
         },
         interactivity: {
           events: {
-            onhover: {
-              enable: true,
-              mode: 'bubble',
-            },
             onclick: {
               enable: true,
               mode: 'repulse',
