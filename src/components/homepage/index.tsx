@@ -19,7 +19,7 @@ const HomePage = () => {
             <span className="spunge">&apos;</span>
             <span className="spunge">m</span>&nbsp;
             <span className="spunge shadow">A</span>
-            <span className="spunge">d</span>
+            <span className="spunge shadow2">d</span>
             <span className="spunge">a</span>
             <span className="spunge">r</span>
             <span className="spunge">s</span>

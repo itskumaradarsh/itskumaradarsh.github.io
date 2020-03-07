@@ -6,20 +6,28 @@
   }
   .intro {
     font-family: 'Permanent Marker', cursive;
-    color: $text-dark-3;
-    font-size: 42px;
+    color: $white;
+    font-size: 46px;
   }
   .bio {
     padding-top: 16px;
-    font-size: 12px;
+    font-size: 14px;
     color: $text-dark-5;
     padding-bottom: 36px;
+    letter-spacing: 1px;
   }
   .shadow {
     color: $secondary-color;
-    font-size: 48px;
+    font-size: 54px;
     &:hover {
       color: $primary-color;
+    }
+  }
+  .shadow2 {
+    color: $primary-color;
+    font-size: 54px;
+    &:hover {
+      color: $secondary-color;
     }
   }
   .right-pane {
