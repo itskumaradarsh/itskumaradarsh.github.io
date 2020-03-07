@@ -1,0 +1,102 @@
+@mixin customScroll($class-name, $color: rgba(0, 0, 0, 0.2)) {
+  .#{$class-name}::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    border-radius: 6px;
+  }
+
+  .#{$class-name}::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  .#{$class-name}::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: $color;
+    cursor: pointer;
+  }
+
+  .#{$class-name}::-webkit-scrollbar:hover {
+    width: 8px;
+  }
+}
+
+@mixin noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@mixin moveDivToCentre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin textEllipsis($width: 70%) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: $width;
+}
+
+@mixin textNotSelectable() {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin display-grid-1($val1: 1fr) {
+  -ms-grid-columns: $val1;
+  grid-template-columns: $val1;
+  display: grid;
+}
+
+@mixin display-grid-2($val1: 1fr, $val2: 1fr) {
+  -ms-grid-columns: $val1 $val2;
+  grid-template-columns: $val1 $val2;
+  display: grid;
+}
+
+@mixin display-grid-3($val1: 1fr, $val2: 1fr, $val3: 1fr) {
+  -ms-grid-columns: $val1 $val2 $val3;
+  grid-template-columns: $val1 $val2 $val3;
+  display: grid;
+}
+
+@mixin display-grid-4($val1: 1fr, $val2: 1fr, $val3: 1fr, $val4: 1fr) {
+  -ms-grid-columns: $val1 $val2 $val3 $val4;
+  grid-template-columns: $val1 $val2 $val3 $val4;
+  display: grid;
+}
+
+@mixin display-grid-5(
+  $val1: 1fr,
+  $val2: 1fr,
+  $val3: 1fr,
+  $val4: 1fr,
+  $val5: 1fr
+) {
+  -ms-grid-columns: $val1 $val2 $val3 $val4 $val5;
+  grid-template-columns: $val1 $val2 $val3 $val4 $val5;
+  display: grid;
+}
+
+@mixin display-grid-6(
+  $val1: 1fr,
+  $val2: 1fr,
+  $val3: 1fr,
+  $val4: 1fr,
+  $val5: 1fr,
+  $val6: 1fr
+) {
+  -ms-grid-columns: $val1 $val2 $val3 $val4 $val5 $val6;
+  grid-template-columns: $val1 $val2 $val3 $val4 $val5 $val6;
+  display: grid;
+}

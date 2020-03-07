@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import { reactRouterHistory } from './utils/navigation';
+import { INDEX_PAGE, HOME_PAGE } from './utils/urls';
+import NotFoundPage from './components/http-responses/not-found';
+import HomePage from './components/homepage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={reactRouterHistory}>
+      <Switch>
+        <Redirect exact path={INDEX_PAGE} to={HOME_PAGE} />
+        <Route path={HOME_PAGE} component={HomePage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </Router>
   );
 }
 
