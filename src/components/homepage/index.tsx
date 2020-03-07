@@ -35,6 +35,7 @@ const HomePage = () => {
             <span className="spunge">a</span>
             <span className="spunge">r</span>
             <span className="spunge">e </span>&nbsp;
+            <div className="breaker" />
             <span className="spunge">E</span>
             <span className="spunge">n</span>
             <span className="spunge">g</span>
@@ -52,14 +53,7 @@ const HomePage = () => {
           <Button name="CONTACT ME" />
         </div>
       </TagWrapper>
-      <div className="right-pane">
-        <object data="adarsh.svg" type="image/svg+xml">
-          <img
-            alt="github"
-            src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
-          />
-        </object>
-      </div>
+      <img className="right-pane" src="adarsh.svg" alt="adarsh" />
     </div>
   );
 };
