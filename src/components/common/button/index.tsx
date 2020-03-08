@@ -3,12 +3,12 @@ import './styles.scss';
 import { IButton } from './interface';
 
 const Button = (props: IButton) => {
-  const { name, onClick } = props;
+  const { name, onClick, type } = props;
   return (
     <div id="adarsh-button">
-      <div className="button" onClick={onClick}>
+      <button className="button" onClick={onClick} type={type}>
         {name}
-      </div>
+      </button>
     </div>
   );
 };

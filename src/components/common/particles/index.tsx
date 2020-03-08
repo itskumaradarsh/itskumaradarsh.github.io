@@ -7,10 +7,10 @@ const ParticlesWrapper = (props: IParticles) => {
   const { type } = props;
 
   return (
-    <div id="particle-wrapper">
+    <div id="particle-wrapper" className={type}>
       {type === 'bubble' && bubbleParticle()}
       {type === 'snow' && snowParticle()}
-      {type === 'line' && liesParticle()}
+      {type === 'line' && linesParticle()}
       {type === 'code' && codeParticles()}
       {type === 'polygon' && polygonParticle()}
     </div>
@@ -24,18 +24,18 @@ const polygonParticle = () => {
         fps_limit: 28,
         particles: {
           number: {
-            value: 200,
+            value: 400,
             density: {
               enable: false,
             },
           },
           line_linked: {
             enable: true,
-            distance: 30,
-            opacity: 0.4,
+            distance: 10,
+            opacity: 0.1,
           },
           move: {
-            speed: 1,
+            speed: 2,
           },
           opacity: {
             anim: {
@@ -44,28 +44,25 @@ const polygonParticle = () => {
               speed: 2,
               sync: false,
             },
-            value: 0.4,
+            value: 1,
           },
         },
         polygon: {
           enable: true,
-          scale: 0.5,
+          scale: 0.2,
           type: 'inline',
           move: {
             radius: 10,
           },
-          url: 'adarsh.svg',
+          url: 'contact.svg',
           inline: {
             arrangement: 'equidistant',
           },
           draw: {
-            enable: true,
-            stroke: {
-              color: 'rgba(255, 255, 255, .2)',
-            },
+            enable: false,
           },
         },
-        retina_detect: false,
+        retina_detect: true,
         interactivity: {
           events: {
             onhover: {
@@ -145,13 +142,13 @@ const snowParticle = () => {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 140,
             density: {
               enable: false,
             },
           },
           size: {
-            value: 10,
+            value: 7,
             random: true,
           },
           move: {
@@ -180,7 +177,7 @@ const snowParticle = () => {
   );
 };
 
-const liesParticle = () => {
+const linesParticle = () => {
   return (
     <Particles
       params={{

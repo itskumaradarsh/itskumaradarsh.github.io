@@ -16,6 +16,13 @@ code {
     monospace;
 }
 
+.flex {
+  display: flex;
+  .flex-auto {
+    flex: auto;
+  }
+}
+
 .no-select,
 div,
 span,

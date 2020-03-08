@@ -9,6 +9,7 @@
     padding: 8px 32px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
+    background: transparent;
     &:hover {
       transform: scale(1.1);
       background: $primary-color;

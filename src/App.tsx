@@ -1,10 +1,11 @@
 import React from 'react';
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import { reactRouterHistory } from './utils/navigation';
-import { HOME_PAGE, INDEX_PAGE } from './utils/urls';
+import { CONTACT_PAGE, HOME_PAGE, INDEX_PAGE } from './utils/urls';
 import NotFoundPage from './components/http-responses/not-found';
 import HomePage from './components/homepage';
 import Sidebar from './components/sidebar/sidebar';
+import ContactPage from './components/contact-page';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Redirect exact from={INDEX_PAGE} to={HOME_PAGE} />
             <Route path={HOME_PAGE} component={HomePage} />
+            <Route path={CONTACT_PAGE} component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

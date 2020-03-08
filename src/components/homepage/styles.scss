@@ -5,7 +5,7 @@
     padding-left: 16px;
   }
   .intro {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
     color: $white;
     font-size: 46px;
     @media only screen and (max-width: 1200px) {
@@ -27,7 +27,7 @@
     color: $text-dark-5;
     padding-bottom: 36px;
     letter-spacing: 1px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
       padding-top: 26px;
       padding-bottom: 46px;
       font-size: 12px;
@@ -35,7 +35,7 @@
   }
   .breaker {
     display: none;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
       display: block;
     }
   }
