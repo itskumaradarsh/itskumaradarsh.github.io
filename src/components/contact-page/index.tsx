@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import { ReactHttpRequest } from '../../utils/http';
 import { ParticleWrapper, TagWrapper, Input, Button } from '../common';
 
 const ContactPage = () => {
