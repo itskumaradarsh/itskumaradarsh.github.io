@@ -142,13 +142,13 @@ const snowParticle = () => {
       params={{
         particles: {
           number: {
-            value: 140,
+            value: 70,
             density: {
               enable: false,
             },
           },
           size: {
-            value: 7,
+            value: 5,
             random: true,
           },
           move: {
