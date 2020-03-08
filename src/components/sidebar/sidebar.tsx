@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -21,11 +21,13 @@ const Sidebar = (props: ISidebar) => {
   return (
     <div id="adarsh-sidebar">
       <div className="header">
-        <div className="brand">
-          <span>A</span>
-          <span>K</span>
-        </div>
-        <div>Adarsh</div>
+        <Link to={HOME_PAGE}>
+          <div className="brand">
+            <span>A</span>
+            <span>K</span>
+          </div>
+          <div>Adarsh</div>
+        </Link>
       </div>
       <div className="navigation">
         <NavLink to={HOME_PAGE} activeClassName="active-link">

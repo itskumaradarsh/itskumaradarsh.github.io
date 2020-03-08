@@ -4,3 +4,4 @@ export { default as TagWrapper } from './tag-wrapper';
 export { default as Button } from './button';
 export { default as Input } from './input';
 export { default as TechPyramid } from './tech-pyramid';
+export { default as TagCloud } from './tag-cloud';
