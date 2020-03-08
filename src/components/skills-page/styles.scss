@@ -44,10 +44,7 @@
   .right-pane {
     position: absolute;
     width: 50%;
-    right: 0;
-    @media only screen and (max-width: 1200px) {
-      right: 50%;
-    }
+    right: 16px;
     @media only screen and (max-width: 1000px) {
       display: none;
     }

@@ -48,7 +48,7 @@ const TagCloudRenderer = () => {
 
   const options = {
     luminosity: 'light',
-    hue: 'blue',
+    hue: 'blue', // blue, green, random
   };
 
   return (
