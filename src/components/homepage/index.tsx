@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
+import { Link } from 'react-router-dom';
 import { ParticleWrapper, TagWrapper, Button } from '../common';
+import { CONTACT_PAGE } from '../../utils/urls';
 
 const HomePage = () => {
   return (
@@ -50,7 +52,9 @@ const HomePage = () => {
           <div className="bio">
             Challenge Programmer / Software Engineer / Blockchain Enthusiast
           </div>
-          <Button name="CONTACT ME" />
+          <Link to={CONTACT_PAGE}>
+            <Button name="CONTACT ME" />
+          </Link>
         </div>
       </TagWrapper>
       <img className="right-pane" src="adarsh.svg" alt="adarsh" />

@@ -222,22 +222,72 @@ const codeParticles = () => {
             out_mode: 'out',
           },
           shape: {
-            type: ['images', 'circle'],
+            type: ['images'],
             images: [
               {
-                src: '/react.cd2ab268.svg',
+                src: '/tech/angular.png',
                 height: 20,
                 width: 23,
               },
               {
-                src: '/k8s.2d579d24.svg',
+                src: '/tech/firebase.png',
                 height: 20,
                 width: 20,
               },
               {
-                src: '/code.b3b4c4f4.png',
+                src: '/tech/github.png',
                 height: 20,
                 width: 20,
+              },
+              {
+                src: '/tech/intellij.png',
+                height: 20,
+                width: 20,
+              },
+              {
+                src: '/tech/java.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/pycharm.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/python.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/react.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/redux.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/swift.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/vscode.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/vue.png',
+                height: 20,
+                width: 23,
+              },
+              {
+                src: '/tech/webstorm.png',
+                height: 20,
+                width: 23,
               },
             ],
           },

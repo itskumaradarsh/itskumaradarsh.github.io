@@ -14,7 +14,7 @@ import {
   HOME_PAGE,
   CONTACT_PAGE,
   ABOUT_PAGE,
-  WORK_PAGE,
+  SKILLS_PAGE,
 } from '../../utils/urls';
 
 const Sidebar = (props: ISidebar) => {
@@ -36,9 +36,9 @@ const Sidebar = (props: ISidebar) => {
           <span className="lnr lnr-user" />
           <span className="hidden">About</span>
         </NavLink>
-        <NavLink to={WORK_PAGE} activeClassName="active-link">
+        <NavLink to={SKILLS_PAGE} activeClassName="active-link">
           <span className="lnr lnr-layers" />
-          <span className="hidden">Work</span>
+          <span className="hidden">Skills</span>
         </NavLink>
         <NavLink to={CONTACT_PAGE} activeClassName="active-link">
           <span className="lnr lnr-location" />
