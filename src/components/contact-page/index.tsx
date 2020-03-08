@@ -3,6 +3,36 @@ import './styles.scss';
 import { ReactHttpRequest } from '../../utils/http';
 import { ParticleWrapper, TagWrapper, Input, Button } from '../common';
 
+const submitForm = async () => {
+  // @ts-ignore
+  const name: string = document.forms['contactForm']['name'].value;
+  // @ts-ignore
+  const email: string = document.forms['contactForm']['email'].value;
+  // @ts-ignore
+  const subject: string = document.forms['contactForm']['subject'].value;
+  // @ts-ignore
+  const message: string = document.forms['contactForm']['message'].value;
+
+  await ReactHttpRequest.post(
+    'https://us-central1-mywebsite-2k.cloudfunctions.net/sendEmail',
+    {
+      name,
+      email,
+      subject,
+      message,
+    },
+  ).then(
+    res => {
+      alert('Message Sent');
+      return true;
+    },
+    err => {
+      alert('something went wrong');
+      return false;
+    },
+  );
+};
+
 const ContactPage = () => {
   return (
     <div className="contact-page">
@@ -27,7 +57,12 @@ const ContactPage = () => {
             large projects. However, if you have other request or question,
             don’t hesitate to contact me using below form either.
           </p>
-          <form className="form">
+          <form
+            className="form"
+            name="contactForm"
+            onSubmit={() => submitForm()}
+            method="post"
+          >
             <div className="div-2fr">
               <Input placeholder="Name" name="name" type="text" isRequired />
               <Input placeholder="Email" name="email" type="email" isRequired />
