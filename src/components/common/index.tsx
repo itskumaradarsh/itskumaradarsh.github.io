@@ -5,3 +5,4 @@ export { default as Button } from './button';
 export { default as Input } from './input';
 export { default as TechPyramid } from './tech-pyramid';
 export { default as TagCloud } from './tag-cloud';
+export { default as Alert } from './alert';

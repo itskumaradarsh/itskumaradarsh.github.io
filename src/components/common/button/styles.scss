@@ -2,7 +2,6 @@
 
 #adarsh-button {
   color: $white;
-
   .button {
     border: 1px solid $primary-color;
     color: $primary-color;
@@ -11,7 +10,8 @@
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     background: transparent;
-
+    box-sizing: border-box;
+    font-size: 14px;
     &:hover {
       transform: scale(1.1);
       background: $primary-color;
@@ -26,5 +26,7 @@
     display: inline-block;
     padding: 8px 32px;
     cursor: no-drop;
+    box-sizing: border-box;
+    font-size: 14px;
   }
 }

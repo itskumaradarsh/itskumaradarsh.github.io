@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.scss';
 import { ReactHttpRequest } from '../../utils/http';
-import { ParticleWrapper, TagWrapper, Input, Button } from '../common';
+import { ParticleWrapper, TagWrapper, Input, Button, Alert } from '../common';
 
 class ContactPage extends Component {
   state = {
@@ -15,6 +15,7 @@ class ContactPage extends Component {
   onFormSubmit = async () => {
     const { name, email, message, subject } = this.state;
     this.setState({ isLoading: true });
+    Alert({ type: 'loading' });
     await ReactHttpRequest.post(
       'https://us-central1-mywebsite-2k.cloudfunctions.net/sendEmail',
       {
@@ -25,11 +26,19 @@ class ContactPage extends Component {
       },
     ).then(
       res => {
-        this.setState({ isLoading: false });
+        this.setState({
+          isLoading: false,
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        Alert({ type: 'success' });
         return true;
       },
       err => {
         this.setState({ isLoading: false });
+        Alert({ type: 'error' });
         return false;
       },
     );
@@ -78,7 +87,7 @@ class ContactPage extends Component {
   };
 
   render() {
-    const { isLoading } = this.state;
+    const { isLoading, name, message, subject, email } = this.state;
     return (
       <div className="contact-page">
         <ParticleWrapper type="snow" />
@@ -107,6 +116,7 @@ class ContactPage extends Component {
                 <Input
                   placeholder="Name"
                   name="name"
+                  value={name}
                   type="text"
                   onChange={this.handleNameChange}
                   isRequired
@@ -115,6 +125,7 @@ class ContactPage extends Component {
                   placeholder="Email"
                   name="email"
                   type="email"
+                  value={email}
                   onChange={this.handleEmailChange}
                   isRequired
                 />
@@ -123,6 +134,7 @@ class ContactPage extends Component {
                 placeholder="Subject"
                 name="subject"
                 type="text"
+                value={subject}
                 isRequired
                 onChange={this.handleSubjectChange}
               />
@@ -130,6 +142,7 @@ class ContactPage extends Component {
                 placeholder="Message"
                 name="message"
                 type="text-area"
+                value={message}
                 onChange={this.handleMessageChange}
                 isRequired
               />

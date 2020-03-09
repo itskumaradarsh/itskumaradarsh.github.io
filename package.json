@@ -29,6 +29,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-tagcloud": "^2.0.0",
+    "sweetalert2": "^9.9.0",
+    "sweetalert2-react-content": "^3.0.1",
     "typescript": "~3.7.2"
   },
   "devDependencies": {

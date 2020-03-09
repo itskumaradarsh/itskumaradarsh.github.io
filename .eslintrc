@@ -25,6 +25,7 @@
     "no-confusing-arrow": "off",
     "no-plusplus": "off",
     "no-use-before-define": "off",
+    "no-useless-escape": "off",
     "implicit-arrow-linebreak": "off",
     "camelcase": "off",
     "comma-dangle": "off",
