@@ -5,15 +5,16 @@ import { ParticleWrapper, TagWrapper, Input, Button } from '../common';
 
 class ContactPage extends Component {
   state = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: null,
+    email: null,
+    subject: null,
+    message: null,
+    isLoading: false,
   };
 
-  onFormSubmit = async (event: any) => {
-    event.preventDefault();
+  onFormSubmit = async () => {
     const { name, email, message, subject } = this.state;
+    this.setState({ isLoading: true });
     await ReactHttpRequest.post(
       'https://us-central1-mywebsite-2k.cloudfunctions.net/sendEmail',
       {
@@ -24,14 +25,32 @@ class ContactPage extends Component {
       },
     ).then(
       res => {
-        alert('Message Sent');
+        this.setState({ isLoading: false });
         return true;
       },
       err => {
-        alert('something went wrong');
+        this.setState({ isLoading: false });
         return false;
       },
     );
+  };
+
+  isAllFieldsSet = () => {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const { name, email, message, subject } = this.state;
+    if (
+      name &&
+      email &&
+      message &&
+      subject &&
+      typeof name === 'string' &&
+      typeof email === 'string' &&
+      typeof subject === 'string' &&
+      typeof message === 'string'
+    ) {
+      return regex.test(String(email).toLowerCase());
+    }
+    return false;
   };
 
   handleNameChange = (e: any) => {
@@ -59,6 +78,7 @@ class ContactPage extends Component {
   };
 
   render() {
+    const { isLoading } = this.state;
     return (
       <div className="contact-page">
         <ParticleWrapper type="snow" />
@@ -82,12 +102,7 @@ class ContactPage extends Component {
               or large projects. However, if you have other request or question,
               don’t hesitate to contact me using below form either.
             </p>
-            <form
-              className="form"
-              name="contactForm"
-              onSubmit={this.onFormSubmit}
-              method="post"
-            >
+            <div className="form">
               <div className="div-2fr">
                 <Input
                   placeholder="Name"
@@ -120,9 +135,14 @@ class ContactPage extends Component {
               />
               <div className="flex">
                 <div className="flex-auto" />
-                <Button name="send" type="submit" />
+                <Button
+                  name="send"
+                  onClick={this.onFormSubmit}
+                  disabled={!this.isAllFieldsSet()}
+                  isLoading={isLoading}
+                />
               </div>
-            </form>
+            </div>
           </div>
           <div className="right-pane">
             <img src="contact.svg" alt="Contact" />

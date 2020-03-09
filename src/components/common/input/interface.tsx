@@ -4,4 +4,5 @@ export interface IInputProps {
   type: 'email' | 'text-area' | 'text';
   name?: string;
   isRequired?: boolean;
+  value?: any;
 }

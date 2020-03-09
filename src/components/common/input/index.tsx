@@ -3,7 +3,7 @@ import './styles.scss';
 import { IInputProps } from './interface';
 
 const Input = (props: IInputProps) => {
-  const { placeholder, onChange, type, isRequired } = props;
+  const { placeholder, onChange, type, isRequired, value } = props;
 
   return (
     <div id="adarsh-input">
@@ -12,6 +12,7 @@ const Input = (props: IInputProps) => {
         onChange={onChange}
         placeholder={placeholder}
         required={isRequired}
+        value={value}
       />
     </div>
   );
