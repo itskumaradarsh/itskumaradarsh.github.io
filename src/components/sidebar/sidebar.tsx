@@ -1,21 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './styles.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookF,
-  faGithubAlt,
-  faTwitter,
-  faLinkedinIn,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
 import { ISidebar } from './interface';
-import {
-  HOME_PAGE,
-  CONTACT_PAGE,
-  ABOUT_PAGE,
-  SKILLS_PAGE,
-} from '../../utils/urls';
+import { HOME_PAGE, SKILLS_PAGE } from '../../utils/urls';
+import { AiFillLinkedin, AiOutlineGithub, AiOutlineHome } from 'react-icons/ai';
+import { FiLayers } from 'react-icons/fi';
 
 const Sidebar = (props: ISidebar) => {
   return (
@@ -30,21 +19,13 @@ const Sidebar = (props: ISidebar) => {
         </Link>
       </div>
       <div className="navigation">
-        <NavLink to={HOME_PAGE} activeClassName="active-link">
-          <span className="lnr lnr-home" />
+        <NavLink to={HOME_PAGE} activeClassName="active-link" exact>
+          <AiOutlineHome />
           <span className="hidden">Home</span>
         </NavLink>
-        <NavLink to={ABOUT_PAGE} activeClassName="active-link">
-          <span className="lnr lnr-user" />
-          <span className="hidden">About</span>
-        </NavLink>
-        <NavLink to={SKILLS_PAGE} activeClassName="active-link">
-          <span className="lnr lnr-layers" />
+        <NavLink to={SKILLS_PAGE} activeClassName="active-link" exact>
+          <FiLayers />
           <span className="hidden">Skills</span>
-        </NavLink>
-        <NavLink to={CONTACT_PAGE} activeClassName="active-link">
-          <span className="lnr lnr-location" />
-          <span className="hidden">Contact</span>
         </NavLink>
       </div>
       <div className="footer">
@@ -52,41 +33,17 @@ const Sidebar = (props: ISidebar) => {
           target="_blank"
           rel="noopener noreferrer"
           className="button"
-          href="https://github.com/adarsh2k"
+          href="https://github.com/itskumaradarsh"
         >
-          <FontAwesomeIcon icon={faGithubAlt} />
+          <AiOutlineGithub />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           className="button"
-          href="https://www.linkedin.com/in/adarsh2k/"
+          href="https://www.linkedin.com/in/itskumaradarsh/"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button"
-          href="https://www.facebook.com/adarsh2k"
-        >
-          <FontAwesomeIcon icon={faFacebookF} />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button"
-          href="https://twitter.com/adarshkumar2k"
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button"
-          href="https://www.instagram.com/adarsh2k/"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
+          <AiFillLinkedin />
         </a>
       </div>
     </div>

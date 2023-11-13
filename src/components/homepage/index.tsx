@@ -1,8 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { Link } from 'react-router-dom';
-import { ParticleWrapper, TagWrapper, Button } from '../common';
-import { CONTACT_PAGE } from '../../utils/urls';
+import { ParticleWrapper, TagWrapper } from '../common';
 
 const HomePage = () => {
   return (
@@ -50,11 +48,9 @@ const HomePage = () => {
             <span className="code">&nbsp;&lt;h1/&gt;</span>
           </div>
           <div className="bio">
-            Challenge Programmer / Software Engineer / Blockchain Enthusiast
+            senior full-stack engineer / blockchain enthusiast / one-time
+            founder
           </div>
-          <Link to={CONTACT_PAGE}>
-            <Button name="CONTACT ME" />
-          </Link>
         </div>
       </TagWrapper>
       <img className="right-pane" src="adarsh.svg" alt="adarsh" />

@@ -1,6 +1,13 @@
 import React from 'react';
 import './styles.scss';
-import { ParticleWrapper, TagWrapper, TagCloud } from '../common';
+import { ParticleWrapper, TagCloud, TagWrapper } from '../common';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { MdOutlineWork } from 'react-icons/md';
+import { IoSchoolSharp } from 'react-icons/io5';
 
 const SkillsPage = () => {
   return (
@@ -30,27 +37,159 @@ const SkillsPage = () => {
             <span className="spunge">e</span>
           </div>
           <div className="code">&lt;h1/&gt;</div>
-          <p>
-            Experienced in Javascript (Full Stack), Databases & Mobile Apps
-            Development with a demonstrated history of working in the
-            Information Technology and Services Industry.
-            <br />
-            Worked on Javascript Framework and libraries such as Angular, React,
-            Redux, NodeJS, Express, VueJS, Electron, React Native (Beginner).
-            <br />
-            Additionally have experience working on languages and technologies
-            such as Solidity (Ethereum Smart Contracts), Android, Firebase,
-            Amazon AWS, Swift (beginner), TypeScript, Kotlin (Beginner), Git,
-            Java, SCSS, HTML, SQLITE, XML, JSON, PostgreSQL, TimescaleDB.
-          </p>
-          <p>
-            Strong Engineering Professional with a Bachelor of Technology
-            (B.Tech.) focused in Computer Science from G.L.Bajaj Institute of
-            Technology and Management.
-          </p>
+          <TagCloud />
         </div>
         <div className="right-pane">
-          <TagCloud />
+          <VerticalTimeline layout="1-column-left" animate>
+            <VerticalTimelineElement
+              className="active"
+              date="February 2021 – Present"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">
+                Tech Lead (Sep 2022 – Present)
+                <br />
+                Senior Software Engineer (Feb 2021 – Aug 2021)
+              </h3>
+              <h4 className="subtitle">Xendit, Indonesia | Malaysia</h4>
+              <ol>
+                <li>
+                  Integrated with all major banks in Indonesia, Singapore, and
+                  The Philippines to create a payment gateway platform.
+                </li>
+                <li>
+                  Integrated with communication channels such as WhatsApp,
+                  Viber, Twilio, and SendGrid, to ensure timely delivery of all
+                  notifications to customers via their preferred channel.
+                </li>
+                <li>
+                  Integrated with remittance providers such as transfer-wise to
+                  facilitate cross-border remittances.
+                </li>
+              </ol>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="May 2021 – September 2022"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">Co-Founder & Chief Technology Officer</h3>
+              <h4 className="subtitle">On Demand Deals, Philippines</h4>
+              <ol>
+                <li>
+                  Co-Founded the company during the pandemic to ensure
+                  hassle-free delivery of groceries to your doorsteps in minutes
+                  without the need to go out.
+                </li>
+                <li>
+                  Established a technical vision with the development team.
+                  Developed all SaaS in-house which includes a management
+                  system, a mobile app, an admin panel, and support CRM.
+                </li>
+                <li>
+                  Grow the company from 0-1 with USD 897k TPV in just 6 months.
+                  Build a team of 52 people and 70+ locations across Metro
+                  Manila with total seed funding of USD 480k.
+                </li>
+              </ol>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="February 2022 – April 2022"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">Batch of W22</h3>
+              <h4 className="subtitle">
+                Iterative (Startup Accelerator), Singapore
+              </h4>
+              <ol>
+                <li>
+                  My Startup ODD got selected for Iterative, which is
+                  Y-Combinator for SEA companies. Got a chance to work and grow
+                  with co-founders of all different nationalities.
+                </li>
+                <li>
+                  After graduation, we were able to meet with 200+ VCs from all
+                  over the world and were able to raise USD 480k in pre-seed
+                  funding.
+                </li>
+              </ol>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="March 2018 – February 2021"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">
+                Senior Software Engineer (Nov 2019 – Feb 2021)
+                <br />
+                Software Engineer (Apr 2019 – Nov 2019)
+                <br />
+                Full Stack Developer (Oct 2018 – Apr 2019)
+                <br />
+                Frontend Developer (Mar 2018 – Oct 2018)
+              </h3>
+              <h4 className="subtitle">
+                Philippines Digital Assets Exchange, Philippines
+              </h4>
+              <ol>
+                <li>
+                  Integrated with all major banks in Indonesia, Singapore, and
+                  The Philippines to create a payment gateway platform.
+                </li>
+                <li>
+                  Integrated with communication channels such as WhatsApp,
+                  Viber, Twilio, and SendGrid, to ensure timely delivery of all
+                  notifications to customers via their preferred channel.
+                </li>
+                <li>
+                  Integrated with remittance providers such as transfer-wise to
+                  facilitate cross-border remittances.
+                </li>
+              </ol>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="September 2017 – July 2018"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">
+                Full Stack Developer (Mar 2018 – Jul 2018)
+                <br />
+                Frontend Developer (Sep 2017 – Mar 2018)
+              </h3>
+              <h4 className="subtitle">Primus Software Corporation, India</h4>
+              <p>
+                Involved in multiple projects simultaneously as a Full Stack
+                Developer. My primary role was interacting with clients,
+                understanding their requirements and challenges, proposing a
+                solution, and getting the team's development done. I also worked
+                closely with the Business Development Team to make Proof of
+                Concepts for enterprise challenges, helping the Business
+                Development Team grab new Projects.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="April 2015 – February 2017"
+              icon={<MdOutlineWork />}
+            >
+              <h3 className="title">Co-Founder</h3>
+              <h4 className="subtitle">OSGRIP Technologies LLP, India</h4>
+              <p>
+                Involved in multiple projects simultaneously as a Full Stack
+                Developer. My primary role was interacting with clients,
+                understanding their requirements and challenges, proposing a
+                solution, and getting the team's development done. I also worked
+                closely with the Business Development Team to make Proof of
+                Concepts for enterprise challenges, helping the Business
+                Development Team grab new Projects.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement date="July 2018" icon={<IoSchoolSharp />}>
+              <h3 className="title">Bachelor of Technology</h3>
+              <h4 className="subtitle">Certification</h4>
+              <p>
+                G.L. Bajaj Institute of Technology & Management affiliated with
+                AKTU (Dr. APJ Abdul Kalam Technical University)
+              </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
         </div>
       </TagWrapper>
     </div>

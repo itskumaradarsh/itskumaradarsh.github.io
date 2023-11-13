@@ -54,13 +54,13 @@
       &:hover {
         color: $primary-color;
       }
-      &:hover .hidden {
-        animation: scale-display 0.5s;
-        display: block;
-      }
+      //&:hover .hidden {
+      //  animation: scale-display 0.5s;
+      //  display: block;
+      //}
     }
     .hidden {
-      display: none;
+      display: block;
       font-size: 16px;
       font-style: italic;
       font-family: 'La Belle Aurore', cursive;
@@ -80,6 +80,9 @@
       padding: 4px 0;
       cursor: pointer;
       font-size: 14px;
+      svg {
+        font-size: 24px;
+      }
       &:hover {
         color: $primary-color;
       }
