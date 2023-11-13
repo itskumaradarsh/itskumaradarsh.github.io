@@ -45,7 +45,7 @@
     transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
     &:after {
       position: absolute;
-      content: url('/tech/react.png');
+      //content: url('public/tech/react.png');
     }
   }
   div:nth-child(2) {
@@ -59,7 +59,7 @@
     transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
     &:after {
       position: absolute;
-      content: url('/tech/android.png');
+      //content: url('public/tech/android.png');
     }
   }
   div:nth-child(3) {
@@ -70,7 +70,7 @@
     transform: rotateX(60deg) rotateY(19.5deg);
     &:after {
       position: absolute;
-      content: url('/tech/html.png');
+      //content: url('public/tech/html.png');
     }
   }
   div:nth-child(4) {
@@ -85,7 +85,7 @@
       translateY(-200px) translateZ(326px);
     &:after {
       position: absolute;
-      content: url('/tech/node.png');
+      //content: url('public/tech/node.png');
     }
   }
 
