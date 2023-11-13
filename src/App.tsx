@@ -6,6 +6,10 @@ import NotFoundPage from './components/http-responses/not-found';
 import HomePage from './components/homepage';
 import Sidebar from './components/sidebar/sidebar';
 import SkillsPage from './components/skills-page';
+import { BsFillFileEarmarkPdfFill } from 'react-icons/bs';
+
+// @ts-ignore
+import CV from './cv.pdf';
 
 function App() {
   return (
@@ -18,6 +22,16 @@ function App() {
             <Route exact path={SKILLS_PAGE} component={SkillsPage} />
             <Route component={NotFoundPage} />
           </Switch>
+        </div>
+        <div className="download-resume">
+          <a
+            href={CV}
+            download="CV - Adarsh Kumar.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsFillFileEarmarkPdfFill />
+          </a>
         </div>
       </div>
     </Router>

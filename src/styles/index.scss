@@ -58,6 +58,24 @@ code {
   }
 }
 
+.download-resume {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: $primary-color;
+  padding: 12px;
+  border-radius: 48px;
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+  svg {
+    font-size: 28px;
+    color: black;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 @keyframes rubberBand {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
