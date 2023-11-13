@@ -46,6 +46,10 @@ const SkillsPage = () => {
               date="February 2021 – Present"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="xendit.png" alt="" />
+              </div>
               <h3 className="title">
                 Tech Lead (Sep 2022 – Present)
                 <br />
@@ -72,6 +76,10 @@ const SkillsPage = () => {
               date="May 2021 – September 2022"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="odd.png" alt="" />
+              </div>
               <h3 className="title">Co-Founder & Chief Technology Officer</h3>
               <h4 className="subtitle">On Demand Deals, Philippines</h4>
               <ol>
@@ -96,6 +104,10 @@ const SkillsPage = () => {
               date="February 2022 – April 2022"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="iterative.jpeg" alt="" />
+              </div>
               <h3 className="title">Batch of W22</h3>
               <h4 className="subtitle">
                 Iterative (Startup Accelerator), Singapore
@@ -117,6 +129,10 @@ const SkillsPage = () => {
               date="March 2018 – February 2021"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="pdax.png" alt="" />
+              </div>
               <h3 className="title">
                 Senior Software Engineer (Nov 2019 – Feb 2021)
                 <br />
@@ -149,6 +165,10 @@ const SkillsPage = () => {
               date="September 2017 – July 2018"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="primus.png" alt="" />
+              </div>
               <h3 className="title">
                 Full Stack Developer (Mar 2018 – Jul 2018)
                 <br />
@@ -169,6 +189,10 @@ const SkillsPage = () => {
               date="April 2015 – February 2017"
               icon={<MdOutlineWork />}
             >
+              <div className="company">
+                <div className="fade" />
+                <img src="osgrip.jpeg" alt="" />
+              </div>
               <h3 className="title">Co-Founder</h3>
               <h4 className="subtitle">OSGRIP Technologies LLP, India</h4>
               <p>
@@ -182,6 +206,10 @@ const SkillsPage = () => {
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement date="July 2018" icon={<IoSchoolSharp />}>
+              <div className="company">
+                <div className="fade" />
+                <img src="glbitm.jpeg" alt="" />
+              </div>
               <h3 className="title">Bachelor of Technology</h3>
               <h4 className="subtitle">Certification</h4>
               <p>
