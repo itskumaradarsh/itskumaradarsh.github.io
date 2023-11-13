@@ -797,7 +797,8 @@
                 ('ReactNative' !== navigator.product &&
                   'NativeScript' !== navigator.product &&
                   'NS' !== navigator.product)) &&
-              'undefined' !== typeof window && 'undefined' !== typeof document
+              'undefined' !== typeof window &&
+              'undefined' !== typeof document
             );
           },
           forEach: u,
@@ -2042,8 +2043,8 @@
             ? 0 === o.type
             : !r &&
               2 < t.length &&
-                ('o' === t[0] || 'O' === t[0]) &&
-                ('n' === t[1] || 'N' === t[1])) ||
+              ('o' === t[0] || 'O' === t[0]) &&
+              ('n' === t[1] || 'N' === t[1])) ||
             ((function(e, t, n, r) {
               if (
                 null === t ||
@@ -2532,7 +2533,8 @@
             var t = e.memoizedState;
             if (
               (null === t &&
-                null !== (e = e.alternate) && (t = e.memoizedState),
+                null !== (e = e.alternate) &&
+                (t = e.memoizedState),
               null !== t)
             )
               return t.dehydrated;
@@ -4664,7 +4666,8 @@
             (i = s),
               (a.shared.pending = null),
               null !== (l = e.alternate) &&
-                null !== (l = l.updateQueue) && (l.baseQueue = s);
+                null !== (l = l.updateQueue) &&
+                (l.baseQueue = s);
           }
           if (null !== i) {
             l = i.next;
@@ -4811,7 +4814,8 @@
             ? e.shouldComponentUpdate(r, a, i)
             : !t.prototype ||
                 !t.prototype.isPureReactComponent ||
-                !$r(n, r) || !$r(o, a);
+                !$r(n, r) ||
+                !$r(o, a);
         }
         function Ea(e, t, n) {
           var r = !1,
