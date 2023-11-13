@@ -4,8 +4,8 @@
 .skills-page {
   .left-pane {
     width: 40%;
-    @media only screen and (max-width: 1000px) {
-      width: 90%;
+    @media only screen and (max-width: 800px) {
+      display: none;
     }
     .spunge:hover {
       color: $secondary-color;
@@ -54,12 +54,10 @@
       background: transparent;
       width: 0;
     }
-    //@media only screen and (max-width: 1200px) {
-    //  right: 50%;
-    //}
-    //@media only screen and (max-width: 1000px) {
-    //  display: none;
-    //}
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
