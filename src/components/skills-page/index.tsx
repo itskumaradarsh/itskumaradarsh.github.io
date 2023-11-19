@@ -58,17 +58,13 @@ const SkillsPage = () => {
               <h4 className="subtitle">Xendit, Indonesia | Malaysia</h4>
               <ol>
                 <li>
-                  Integrated with all major banks in Indonesia, Singapore, and
-                  The Philippines to create a payment gateway platform.
+                  Integrated with all major banks in Indonesia, and The
+                  Philippines to create a payment gateway platform.
                 </li>
                 <li>
                   Integrated with communication channels such as WhatsApp,
                   Viber, Twilio, and SendGrid, to ensure timely delivery of all
                   notifications to customers via their preferred channel.
-                </li>
-                <li>
-                  Integrated with remittance providers such as transfer-wise to
-                  facilitate cross-border remittances.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -84,14 +80,13 @@ const SkillsPage = () => {
               <h4 className="subtitle">On Demand Deals, Philippines</h4>
               <ol>
                 <li>
-                  Co-Founded the company during the pandemic to ensure
-                  hassle-free delivery of groceries to your doorsteps in minutes
-                  without the need to go out.
+                  Co-founded a pandemic-born company focused on seamless,
+                  doorstep grocery delivery within minutes, eliminating the need
+                  to venture outdoors.
                 </li>
                 <li>
                   Established a technical vision with the development team.
-                  Developed all SaaS in-house which includes a management
-                  system, a mobile app, an admin panel, and support CRM.
+                  Developed all SaaS in-house.
                 </li>
                 <li>
                   Grow the company from 0-1 with USD 897k TPV in just 6 months.
@@ -136,28 +131,23 @@ const SkillsPage = () => {
               <h3 className="title">
                 Senior Software Engineer (Nov 2019 – Feb 2021)
                 <br />
-                Software Engineer (Apr 2019 – Nov 2019)
-                <br />
-                Full Stack Developer (Oct 2018 – Apr 2019)
-                <br />
-                Frontend Developer (Mar 2018 – Oct 2018)
+                Software Engineer (Mar 2018 – Nov 2019)
               </h3>
               <h4 className="subtitle">
                 Philippines Digital Assets Exchange, Philippines
               </h4>
               <ol>
                 <li>
-                  Integrated with all major banks in Indonesia, Singapore, and
-                  The Philippines to create a payment gateway platform.
+                  Led payments integrations team at PDAX, overseeing integration
+                  with major payment providers.
                 </li>
                 <li>
-                  Integrated with communication channels such as WhatsApp,
-                  Viber, Twilio, and SendGrid, to ensure timely delivery of all
-                  notifications to customers via their preferred channel.
+                  Worked on Solidity Smart Contracts using ERC20 and ERC721
+                  standards for the PDAX-based coins.
                 </li>
                 <li>
-                  Integrated with remittance providers such as transfer-wise to
-                  facilitate cross-border remittances.
+                  Worked on Trade Exchange frontend using ReactJS, Redux and
+                  Complex Timeseries Graphs.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -176,13 +166,10 @@ const SkillsPage = () => {
               </h3>
               <h4 className="subtitle">Primus Software Corporation, India</h4>
               <p>
-                Involved in multiple projects simultaneously as a Full Stack
-                Developer. My primary role was interacting with clients,
-                understanding their requirements and challenges, proposing a
-                solution, and getting the team's development done. I also worked
-                closely with the Business Development Team to make Proof of
-                Concepts for enterprise challenges, helping the Business
-                Development Team grab new Projects.
+                As a Full Stack Developer, I engaged with clients, translated
+                their needs into solutions, and directed the development team.
+                Additionally, collaborated with the Business Development Team on
+                Proof of Concepts, aiding in securing new projects.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -196,13 +183,13 @@ const SkillsPage = () => {
               <h3 className="title">Co-Founder</h3>
               <h4 className="subtitle">OSGRIP Technologies LLP, India</h4>
               <p>
-                Involved in multiple projects simultaneously as a Full Stack
-                Developer. My primary role was interacting with clients,
-                understanding their requirements and challenges, proposing a
-                solution, and getting the team's development done. I also worked
-                closely with the Business Development Team to make Proof of
-                Concepts for enterprise challenges, helping the Business
-                Development Team grab new Projects.
+                Co-founded a startup during my second year of graduation in the
+                college's Microsoft Innovation Center incubation program.
+                Created a digital ecosystem to streamline tasks, overseeing a
+                technical vision and leading the development team. Successfully
+                developed Android apps, web apps, and websites. Expanded the
+                team to 15+ members, managing concurrent projects with diverse
+                teams.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement date="July 2018" icon={<IoSchoolSharp />}>
