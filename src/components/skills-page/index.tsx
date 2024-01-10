@@ -55,16 +55,17 @@ const SkillsPage = () => {
                 <br />
                 Senior Software Engineer (Feb 2021 – Aug 2021)
               </h3>
-              <h4 className="subtitle">Xendit, Indonesia | Malaysia</h4>
+              <h4 className="subtitle">
+                Xendit (YC S15), Indonesia | Malaysia
+              </h4>
               <ol>
+                <li>Integration with major banks in SEA</li>
                 <li>
-                  Integrated with all major banks in Indonesia, and The
-                  Philippines to create a payment gateway platform.
+                  Integration with communication channels (WhatsApp, Viber,
+                  Emails, etc.)
                 </li>
                 <li>
-                  Integrated with communication channels such as WhatsApp,
-                  Viber, Twilio, and SendGrid, to ensure timely delivery of all
-                  notifications to customers via their preferred channel.
+                  Leading internal projects, delivering reliable solutions
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -80,19 +81,17 @@ const SkillsPage = () => {
               <h4 className="subtitle">On Demand Deals, Philippines</h4>
               <ol>
                 <li>
-                  Co-founded a pandemic-born company focused on seamless,
-                  doorstep grocery delivery within minutes, eliminating the need
-                  to venture outdoors.
+                  Make VCs believe in this idea, secure funding of $480k
+                  pre-seed
                 </li>
                 <li>
-                  Established a technical vision with the development team.
-                  Developed all SaaS in-house.
+                  Meeting users, Identifying pain points, and solving for
+                  customers first
                 </li>
                 <li>
-                  Grow the company from 0-1 with USD 897k TPV in just 6 months.
-                  Build a team of 52 people and 70+ locations across Metro
-                  Manila with total seed funding of USD 480k.
+                  Establish technical vision and culture in the organization
                 </li>
+                <li>0-1 for B2B2C SaaS</li>
               </ol>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -137,18 +136,12 @@ const SkillsPage = () => {
                 Philippines Digital Assets Exchange, Philippines
               </h4>
               <ol>
+                <li>Help launch PDAX from 0-1 in 11 months</li>
                 <li>
-                  Led payments integrations team at PDAX, overseeing integration
-                  with major payment providers.
+                  Lead Payments Integrations in PH (major banks, and e-wallets)
                 </li>
-                <li>
-                  Worked on Solidity Smart Contracts using ERC20 and ERC721
-                  standards for the PDAX-based coins.
-                </li>
-                <li>
-                  Worked on Trade Exchange frontend using ReactJS, Redux and
-                  Complex Timeseries Graphs.
-                </li>
+                <li>Worked on Smart Contracts (ERC 20, ERC 721, etc.)</li>
+                <li>Setup technical vision and work culture among engineers</li>
               </ol>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -166,10 +159,9 @@ const SkillsPage = () => {
               </h3>
               <h4 className="subtitle">Primus Software Corporation, India</h4>
               <p>
-                As a Full Stack Developer, I engaged with clients, translated
-                their needs into solutions, and directed the development team.
-                Additionally, collaborated with the Business Development Team on
-                Proof of Concepts, aiding in securing new projects.
+                As a Full Stack Developer, I translated client needs into
+                solutions, directed development teams, and collaborated with
+                Business Development on Proof of Concepts for new projects.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -180,16 +172,14 @@ const SkillsPage = () => {
                 <div className="fade" />
                 <img src="osgrip.jpeg" alt="" />
               </div>
-              <h3 className="title">Co-Founder</h3>
+              <h3 className="title">Project Lead</h3>
               <h4 className="subtitle">OSGRIP Technologies LLP, India</h4>
               <p>
-                Co-founded a startup during my second year of graduation in the
-                college's Microsoft Innovation Center incubation program.
-                Created a digital ecosystem to streamline tasks, overseeing a
-                technical vision and leading the development team. Successfully
-                developed Android apps, web apps, and websites. Expanded the
-                team to 15+ members, managing concurrent projects with diverse
-                teams.
+                Founded the college startup. Established a technical vision with
+                the development team. Developed various software products and
+                completed various projects in the domain of Android App, Web
+                App, and website development. Hired over 15 people, and worked
+                on various projects with various teams simultaneously.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement date="July 2018" icon={<IoSchoolSharp />}>

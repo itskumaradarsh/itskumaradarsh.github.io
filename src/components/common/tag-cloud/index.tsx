@@ -5,6 +5,10 @@ import { TagCloud } from 'react-tagcloud';
 const TagCloudRenderer = () => {
   const data = [
     { value: 'React', count: 10 },
+    { value: 'Microservices', count: 10 },
+    { value: 'Docker', count: 9 },
+    { value: 'Web3', count: 7 },
+    { value: 'SQS', count: 9 },
     { value: 'Redux', count: 8 },
     { value: 'Android', count: 6 },
     { value: 'AWS', count: 9 },
