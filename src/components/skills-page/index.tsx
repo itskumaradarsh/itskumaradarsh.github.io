@@ -56,16 +56,55 @@ const SkillsPage = () => {
                 Senior Software Engineer (Feb 2021 – Aug 2021)
               </h3>
               <h4 className="subtitle">
-                Xendit (YC S15), Indonesia | Malaysia
+                XENDIT (YC S15)(Philippines, Indonesia, Malaysia)
               </h4>
+              <h6 className="desc">
+                Xendit is a payment gateway that helps businesses make payments
+                simple, secure, and easy for customers. We process millions of
+                transactions monthly, helping businesses grow by providing a
+                suite of world-class APIs and Dashboard UI.
+                <br />
+                <br />
+                Recruited as a Senior Software engineer to integrate with major
+                banks in The Philippines, Indonesia and centralized tools to
+                help the engineering department, define processes within a
+                engineering team and later extend it to the organization level
+                and test product qualities using various testing methodologies.
+              </h6>
               <ol>
-                <li>Integration with major banks in SEA</li>
                 <li>
-                  Integration with communication channels (WhatsApp, Viber,
-                  Emails, etc.)
+                  Integrated with major banks in Indonesia, and The Philippines
+                  to create a payment gateway platform. It allowed Xendit to
+                  route disbursements via multiple banks and e-wallets which
+                  eventually increased the payment processing time of customers
+                  by 70%.
                 </li>
                 <li>
-                  Leading internal projects, delivering reliable solutions
+                  Routing and Circuit Breaker Service to monitor unhealthy
+                  channels and auto disable/enable them when needed, and it
+                  resulted in reduction of failed transaction by over 250% by
+                  routing new transactions to healthy channels and manual recon.
+                </li>
+                <li>
+                  Integration With Communication Channels such as Whatsapp
+                  (Meta), SMS Providers, Email Providers, Viber etc, which
+                  allowed Xendit to timely deliver various transactional and
+                  alert notifications to their end users, which enhanced overall
+                  user experience and reliability of our systems in times of
+                  fire by alerting our users ahead of time.
+                </li>
+                <li>
+                  Infra Cost Reduction Initiatives such as optimizing cost of
+                  AWS S3 by using various S3 storage class based on usage which
+                  reduced overall s3 usages cost by 65%, optimising the usages
+                  of mongo indexes and TTL based on requirements to reduce the
+                  DB cost by 40%.
+                </li>
+                <li>
+                  Led a team of 6 professionals creating a better team culture
+                  and smoother processes. Projects were finished faster, the
+                  team got more efficient, and we consistently delivered ahead
+                  of schedule.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -79,43 +118,27 @@ const SkillsPage = () => {
               </div>
               <h3 className="title">Co-Founder & Chief Technology Officer</h3>
               <h4 className="subtitle">On Demand Deals, Philippines</h4>
+              <h6 className="desc">
+                On Demand Deals specializes in e-commerce and logistics and
+                helps cloud convenience stores by transforming any unused space
+                into business.
+                <br />
+                <br />
+                Co-founded a pandemic-born company focused on seamless, doorstep
+                grocery delivery within minutes, eliminating the need to venture
+                outdoors.
+              </h6>
               <ol>
                 <li>
-                  Make VCs believe in this idea, secure funding of $480k
-                  pre-seed
+                  Make VCs believe in this Idea and raised funding from ventures
+                  such as Iterative Singapore, Accelerating Asia, etc with a
+                  total sum of USD 480,000 in pre-seed round.
                 </li>
                 <li>
-                  Meeting users, Identifying pain points, and solving for
-                  customers first
-                </li>
-                <li>
-                  Establish technical vision and culture in the organization
-                </li>
-                <li>0-1 for B2B2C SaaS</li>
-              </ol>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              date="February 2022 – April 2022"
-              icon={<MdOutlineWork />}
-            >
-              <div className="company">
-                <div className="fade" />
-                <img src="iterative.jpeg" alt="" />
-              </div>
-              <h3 className="title">Batch of W22</h3>
-              <h4 className="subtitle">
-                Iterative (Startup Accelerator), Singapore
-              </h4>
-              <ol>
-                <li>
-                  My Startup ODD got selected for Iterative, which is
-                  Y-Combinator for SEA companies. Got a chance to work and grow
-                  with co-founders of all different nationalities.
-                </li>
-                <li>
-                  After graduation, we were able to meet with 200+ VCs from all
-                  over the world and were able to raise USD 480k in pre-seed
-                  funding.
+                  Established a technical vision with the development team,
+                  together we developed complete SaaS which helped us scale to
+                  more than 50 locations across metro manila and gain GMV of
+                  USD1,370,000 in just 6 months with over 200% MoM.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -135,13 +158,40 @@ const SkillsPage = () => {
               <h4 className="subtitle">
                 Philippines Digital Assets Exchange, Philippines
               </h4>
+              <h6 className="desc">
+                PDAX is the Philippines' leading homegrown cryptocurrency
+                exchange, supervised by the Bangko Sentral ng Pilipinas.
+                <br />
+                <br />
+                Recruited as a Software engineer to work on trade matching
+                engine, build various trading dashboard and chats and to
+                integrate with major banks in The Philippines.
+              </h6>
               <ol>
-                <li>Help launch PDAX from 0-1 in 11 months</li>
                 <li>
-                  Lead Payments Integrations in PH (major banks, and e-wallets)
+                  Help Launch PDAX as one of the earliest team members,
+                  significantly contributing to establishing a strong market
+                  presence in the Philippines. Played a key role in achieving a
+                  high customer retention rate for this super early-stage
+                  startup. Worked on Trade Exchange frontend using ReactJS,
+                  Redux and Complex Timeseries Graphs.
                 </li>
-                <li>Worked on Smart Contracts (ERC 20, ERC 721, etc.)</li>
-                <li>Setup technical vision and work culture among engineers</li>
+                <li>
+                  Led payments integrations team at PDAX overseeing integration
+                  with major banks and e-wallets in The Philippines. It allowed
+                  PDAX to accept payments on its platform which was previously a
+                  manual process hence reducing the payment processing time by 3
+                  days.
+                </li>
+                <li>
+                  Help Launch bonds.ph, a product which allows you to buy
+                  government bonds as tokens using web3 technology in
+                  partnership with unionbank. It required me to work on Solidity
+                  Smart Contracts such as ERC20, ERC721 etc. It allowed PDAX to
+                  acquire big market share as now users can buy government
+                  issued bonds online instead of needing to goto banks and
+                  manually purchase it which usually takes weeks to process.{' '}
+                </li>
               </ol>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -158,6 +208,11 @@ const SkillsPage = () => {
                 Frontend Developer (Sep 2017 – Mar 2018)
               </h3>
               <h4 className="subtitle">Primus Software Corporation, India</h4>
+              <h6 className="desc">
+                Primus Software Corporation is a staffing and software
+                development company with an unwavering commitment to helping our
+                clients stay ahead of the curve.
+              </h6>
               <p>
                 As a Full Stack Developer, I translated client needs into
                 solutions, directed development teams, and collaborated with
