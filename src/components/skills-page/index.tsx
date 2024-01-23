@@ -81,24 +81,25 @@ const SkillsPage = () => {
                 </li>
                 <li>
                   Routing and Circuit Breaker Service to monitor unhealthy
-                  channels and auto disable/enable them when needed, and it
-                  resulted in reduction of failed transaction by over 250% by
-                  routing new transactions to healthy channels and manual recon.
+                  channels and auto-disable/enable them when needed, and it
+                  resulted in a reduction of the failed transactions by over
+                  250% by routing new transactions to healthy channels and
+                  manual recon.
                 </li>
                 <li>
-                  Integration With Communication Channels such as Whatsapp
-                  (Meta), SMS Providers, Email Providers, Viber etc, which
+                  Integration With Communication Channels such as WhatsApp
+                  (Meta), SMS Providers, Email Providers, Viber, etc, which
                   allowed Xendit to timely deliver various transactional and
                   alert notifications to their end users, which enhanced overall
                   user experience and reliability of our systems in times of
                   fire by alerting our users ahead of time.
                 </li>
                 <li>
-                  Infra Cost Reduction Initiatives such as optimizing cost of
-                  AWS S3 by using various S3 storage class based on usage which
-                  reduced overall s3 usages cost by 65%, optimising the usages
-                  of mongo indexes and TTL based on requirements to reduce the
-                  DB cost by 40%.
+                  Infra Cost Reduction Initiatives such as optimizing the cost
+                  of AWS S3 by using various S3 storage classes based on usage
+                  which reduced overall s3 usage cost by 65%, optimizing the
+                  usages of Mongo indexes and TTL based on requirements to
+                  reduce the DB cost by 40%.
                 </li>
                 <li>
                   Led a team of 6 professionals creating a better team culture
@@ -130,15 +131,15 @@ const SkillsPage = () => {
               </h6>
               <ol>
                 <li>
-                  Make VCs believe in this Idea and raised funding from ventures
+                  Make VCs believe in this Idea and raise funding from ventures
                   such as Iterative Singapore, Accelerating Asia, etc with a
                   total sum of USD 480,000 in pre-seed round.
                 </li>
                 <li>
-                  Established a technical vision with the development team,
-                  together we developed complete SaaS which helped us scale to
-                  more than 50 locations across metro manila and gain GMV of
-                  USD1,370,000 in just 6 months with over 200% MoM.
+                  Established a technical vision with the development team, we
+                  developed complete SaaS which helped us scale to more than 50
+                  locations across Metro Manila and gain GMV of USD1,370,000 in
+                  just 6 months with over 200% MoM.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -163,18 +164,18 @@ const SkillsPage = () => {
                 exchange, supervised by the Bangko Sentral ng Pilipinas.
                 <br />
                 <br />
-                Recruited as a Software engineer to work on trade matching
-                engine, build various trading dashboard and chats and to
+                Recruited as a Software engineer to work on a trade matching
+                engine, build various trading dashboards and chats, and
                 integrate with major banks in The Philippines.
               </h6>
               <ol>
                 <li>
                   Help Launch PDAX as one of the earliest team members,
                   significantly contributing to establishing a strong market
-                  presence in the Philippines. Played a key role in achieving a
-                  high customer retention rate for this super early-stage
-                  startup. Worked on Trade Exchange frontend using ReactJS,
-                  Redux and Complex Timeseries Graphs.
+                  presence in the Philippines, which played a key role in
+                  achieving a high customer retention rate for this super
+                  early-stage startup. Worked on the Trade Exchange front-end
+                  using ReactJS, Redux, and Complex Timeseries Graphs.
                 </li>
                 <li>
                   Led payments integrations team at PDAX overseeing integration
@@ -184,13 +185,14 @@ const SkillsPage = () => {
                   days.
                 </li>
                 <li>
-                  Help Launch bonds.ph, a product which allows you to buy
+                  Help Launch bonds.ph, a product that allowed customers to buy
                   government bonds as tokens using web3 technology in
-                  partnership with unionbank. It required me to work on Solidity
-                  Smart Contracts such as ERC20, ERC721 etc. It allowed PDAX to
-                  acquire big market share as now users can buy government
-                  issued bonds online instead of needing to goto banks and
-                  manually purchase it which usually takes weeks to process.{' '}
+                  partnership with Unionbank. It required me to work on Solidity
+                  Smart Contracts such as ERC20 and ERC721. It allowed PDAX to
+                  acquire a big market share as now users can buy
+                  government-issued bonds online instead of needing to go to
+                  banks and manually purchase them which usually takes weeks to
+                  process.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -214,9 +216,10 @@ const SkillsPage = () => {
                 clients stay ahead of the curve.
               </h6>
               <p>
-                As a Full Stack Developer, I translated client needs into
-                solutions, directed development teams, and collaborated with
-                Business Development on Proof of Concepts for new projects.
+                As a Full Stack Developer, I engaged with clients, translated
+                their needs into solutions, and directed the development team.
+                Additionally, collaborated with the Business Development Team on
+                Proof of Concepts, aiding in securing new projects.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
