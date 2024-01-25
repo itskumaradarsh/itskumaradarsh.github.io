@@ -66,46 +66,39 @@ const SkillsPage = () => {
                 <br />
                 <br />
                 Recruited as a Senior Software engineer to integrate with major
-                banks in The Philippines, Indonesia and centralized tools to
-                help the engineering department, define processes within a
-                engineering team and later extend it to the organization level
-                and test product qualities using various testing methodologies.
+                banks in SEA, and centralized tools to help the engineering,
+                define processes, and later extend it to the organization level.
               </h6>
               <ol>
                 <li>
-                  Integrated with major banks in Indonesia, and The Philippines
-                  to create a payment gateway platform. It allowed Xendit to
-                  route disbursements via multiple banks and e-wallets which
-                  eventually increased the payment processing time of customers
-                  by 70%.
+                  Integrated major SEA banks, and optimized disbursements via
+                  multiple channels, leading to a{' '}
+                  <b>70% boost in payment processing speed</b>.
                 </li>
                 <li>
-                  Routing and Circuit Breaker Service to monitor unhealthy
-                  channels and auto-disable/enable them when needed, and it
-                  resulted in a reduction of the failed transactions by over
-                  250% by routing new transactions to healthy channels and
-                  manual recon.
+                  Implementation of circuit breaker, auto enable/disable payment
+                  channels,{' '}
+                  <b>reduction of the failed transactions by over 250%</b>.
                 </li>
                 <li>
-                  Integration With Communication Channels such as WhatsApp
-                  (Meta), SMS Providers, Email Providers, Viber, etc, which
-                  allowed Xendit to timely deliver various transactional and
-                  alert notifications to their end users, which enhanced overall
-                  user experience and reliability of our systems in times of
-                  fire by alerting our users ahead of time.
+                  Led Infra cost reduction Initiatives, achieving up to{' '}
+                  <b>
+                    65% savings in AWS costs and 40% reduction in DB expenses
+                  </b>
+                  .
                 </li>
                 <li>
-                  Infra Cost Reduction Initiatives such as optimizing the cost
-                  of AWS S3 by using various S3 storage classes based on usage
-                  which reduced overall s3 usage cost by 65%, optimizing the
-                  usages of Mongo indexes and TTL based on requirements to
-                  reduce the DB cost by 40%.
+                  Integrated communication channels (WhatsApp, SMS, Email,
+                  Viber, etc.) for <b>timely transactional notifications</b>.
                 </li>
                 <li>
-                  Led a team of 6 professionals creating a better team culture
-                  and smoother processes. Projects were finished faster, the
-                  team got more efficient, and we consistently delivered ahead
-                  of schedule.
+                  Guided a 6-member team to enhance culture and optimize
+                  processes, resulting in{' '}
+                  <b>
+                    heightened team efficiency and consistent ahead-of-schedule
+                    deliveries
+                  </b>
+                  .
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -130,16 +123,15 @@ const SkillsPage = () => {
                 outdoors.
               </h6>
               <ol>
+                <li>Secured $480,000 in pre-seed funding.</li>
                 <li>
-                  Make VCs believe in this Idea and raise funding from ventures
-                  such as Iterative Singapore, Accelerating Asia, etc with a
-                  total sum of USD 480,000 in pre-seed round.
+                  Set a technical vision, led the development of a SaaS,
+                  enabling
+                  <b>scaling to 50+ locations in Metro Manila</b>
                 </li>
                 <li>
-                  Established a technical vision with the development team, we
-                  developed complete SaaS which helped us scale to more than 50
-                  locations across Metro Manila and gain GMV of USD1,370,000 in
-                  just 6 months with over 200% MoM.
+                  GMV of USD 1,370,000 in 6 months with over{' '}
+                  <b>200% MoM growth</b>.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -164,35 +156,25 @@ const SkillsPage = () => {
                 exchange, supervised by the Bangko Sentral ng Pilipinas.
                 <br />
                 <br />
-                Recruited as a Software engineer to work on a trade matching
-                engine, build various trading dashboards and chats, and
-                integrate with major banks in The Philippines.
+                Hired as a Software Engineer for trade matching engine
+                development, creation of trading dashboards and chats, and
+                integration with major banks in The Philippines.
               </h6>
               <ol>
                 <li>
-                  Help Launch PDAX as one of the earliest team members,
-                  significantly contributing to establishing a strong market
-                  presence in the Philippines, which played a key role in
-                  achieving a high customer retention rate for this super
-                  early-stage startup. Worked on the Trade Exchange front-end
-                  using ReactJS, Redux, and Complex Timeseries Graphs.
+                  <b>Pivotal role in PDAX 0-1 launch</b>, establishing a strong
+                  Philippines market presence
                 </li>
                 <li>
-                  Led payments integrations team at PDAX overseeing integration
-                  with major banks and e-wallets in The Philippines. It allowed
-                  PDAX to accept payments on its platform which was previously a
-                  manual process hence reducing the payment processing time by 3
-                  days.
+                  <b>Led PDAX payments integration team</b>, overseeing major
+                  bank and e-wallet integration in The Philippines. Automated
+                  payments,
+                  <b>reducing processing time by 3 days</b>.
                 </li>
                 <li>
-                  Help Launch bonds.ph, a product that allowed customers to buy
-                  government bonds as tokens using web3 technology in
-                  partnership with Unionbank. It required me to work on Solidity
-                  Smart Contracts such as ERC20 and ERC721. It allowed PDAX to
-                  acquire a big market share as now users can buy
-                  government-issued bonds online instead of needing to go to
-                  banks and manually purchase them which usually takes weeks to
-                  process.
+                  Help Launch bonds.ph, allowed users to{' '}
+                  <b>buy government-issued bonds in minutes instead of weeks</b>
+                  .
                 </li>
               </ol>
             </VerticalTimelineElement>
