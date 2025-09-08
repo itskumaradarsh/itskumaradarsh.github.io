@@ -43,7 +43,51 @@ const SkillsPage = () => {
           <VerticalTimeline layout="1-column-left" animate>
             <VerticalTimelineElement
               className="active"
-              date="February 2021 – Present"
+              date="April 2024 – Present"
+              icon={<MdOutlineWork />}
+            >
+              <div className="company">
+                <div className="fade" />
+                <img src="stashaway.jpg" alt="" />
+              </div>
+              <h3 className="title">
+                Senior Staff Engineer (April 2024 – Present)
+              </h3>
+              <h4 className="subtitle">StashAway (Malaysia)</h4>
+              <ol>
+                <li>
+                  <b>Onboarding:</b> Redesigned onboarding flow (KYC, auth,
+                  account creation), cutting signup time by <b>35%</b> and
+                  boosting conversions.
+                </li>
+                <li>
+                  <b>System Modernization:</b> Migrated legacy services into{' '}
+                  <b>microservices architecture</b>, improving scalability and
+                  ensuring zero downtime.
+                </li>
+                <li>
+                  <b>Infrastructure & Stability:</b> Optimized infra, achieving{' '}
+                  <b>30% lower AWS staging costs</b>, improved CI/CD pipelines,
+                  and reduced release cycles by <b>40%</b>.
+                </li>
+                <li>
+                  <b>Security & Auth:</b> Strengthened authentication with
+                  OAuth2 + MFA, improving login reliability and resilience.
+                </li>
+                <li>
+                  <b>AI & Automation:</b> Applied AI across multiple projects
+                  using <b>MCP (Model Context Protocol)</b> for AI-assisted
+                  development; introduced AI-driven code reviews, reducing
+                  review cycles and accelerating delivery.
+                </li>
+                <li>
+                  <b>Mentorship:</b> Guided junior and mid-level engineers,
+                  raising team productivity and code quality.
+                </li>
+              </ol>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="February 2021 – February 2024"
               icon={<MdOutlineWork />}
             >
               <div className="company">
@@ -51,54 +95,38 @@ const SkillsPage = () => {
                 <img src="xendit.png" alt="" />
               </div>
               <h3 className="title">
-                Tech Lead (Sep 2022 – Present)
+                Tech Lead (Sep 2022 – Feb 2024)
                 <br />
                 Senior Software Engineer (Feb 2021 – Aug 2021)
               </h3>
               <h4 className="subtitle">
                 XENDIT (YC S15)(Philippines, Indonesia, Malaysia)
               </h4>
-              <h6 className="desc">
-                Xendit is a payment gateway that helps businesses make payments
-                simple, secure, and easy for customers. We process millions of
-                transactions monthly, helping businesses grow by providing a
-                suite of world-class APIs and Dashboard UI.
-                <br />
-                <br />
-                Recruited as a Senior Software engineer to integrate with major
-                banks in SEA, and centralized tools to help the engineering,
-                define processes, and later extend it to the organization level.
-              </h6>
               <ol>
                 <li>
-                  Integrated major SEA banks, and optimized disbursements via
-                  multiple channels, leading to a{' '}
-                  <b>70% boost in payment processing speed</b>.
+                  <b>Payments Platform:</b> Integrated with{' '}
+                  <b>major banks and e-wallets</b> across SEA, cutting payment
+                  processing times by <b>70%</b>.
                 </li>
                 <li>
-                  Implementation of circuit breaker, auto enable/disable payment
-                  channels,{' '}
-                  <b>reduction of the failed transactions by over 250%</b>.
+                  <b>Resilience & Stability:</b> Built a{' '}
+                  <b>routing & circuit breaker service</b> that auto-detects
+                  failing channels, reducing failed transactions by <b>250%</b>.
                 </li>
                 <li>
-                  Led Infra cost reduction Initiatives, achieving up to{' '}
-                  <b>
-                    65% savings in AWS costs and 40% reduction in DB expenses
-                  </b>
-                  .
+                  <b>Infra Optimization:</b> Reduced infra costs by{' '}
+                  <b>65% (AWS S3)</b> and <b>40% (DB)</b> through storage class
+                  optimization and index tuning.
                 </li>
                 <li>
-                  Integrated communication channels (WhatsApp, SMS, Email,
-                  Viber, etc.) for <b>timely transactional notifications</b>.
+                  <b>Messaging Systems:</b> Integrated multi-channel comms
+                  (WhatsApp, SMS, Viber, Email) to improve reliability of
+                  transactional notifications.
                 </li>
                 <li>
-                  Guided a 6-member team to enhance culture and optimize
-                  processes, resulting in{' '}
-                  <b>
-                    heightened team efficiency and consistent ahead-of-schedule
-                    deliveries
-                  </b>
-                  .
+                  <b>Team Leadership:</b> Led and mentored a 6-person
+                  engineering team, improving delivery velocity and code
+                  quality.
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -112,26 +140,18 @@ const SkillsPage = () => {
               </div>
               <h3 className="title">Co-Founder & Chief Technology Officer</h3>
               <h4 className="subtitle">On Demand Deals, Philippines</h4>
-              <h6 className="desc">
-                On Demand Deals specializes in e-commerce and logistics and
-                helps cloud convenience stores by transforming any unused space
-                into business.
-                <br />
-                <br />
-                Co-founded a pandemic-born company focused on seamless, doorstep
-                grocery delivery within minutes, eliminating the need to venture
-                outdoors.
-              </h6>
               <ol>
-                <li>Secured $480,000 in pre-seed funding.</li>
                 <li>
-                  Set a technical vision, led the development of a SaaS,
-                  enabling
-                  <b>scaling to 50+ locations in Metro Manila</b>
+                  <b>Raised $480K pre-seed funding</b> from Iterative Singapore
+                  and Accelerating Asia
                 </li>
                 <li>
-                  GMV of USD 1,370,000 in 6 months with over{' '}
-                  <b>200% MoM growth</b>.
+                  Oversaw <b>200% MoM growth</b> by leading product and
+                  engineering end-to-end
+                </li>
+                <li>
+                  Built a SaaS platform scaling to 50+ locations in Manila,{' '}
+                  <b>reaching $1.37M GMV in 6 months</b>
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -151,30 +171,24 @@ const SkillsPage = () => {
               <h4 className="subtitle">
                 Philippines Digital Assets Exchange, Philippines
               </h4>
-              <h6 className="desc">
-                PDAX is the Philippines' leading homegrown cryptocurrency
-                exchange, supervised by the Bangko Sentral ng Pilipinas.
-                <br />
-                <br />
-                Hired as a Software Engineer for trade matching engine
-                development, creation of trading dashboards and chats, and
-                integration with major banks in The Philippines.
-              </h6>
               <ol>
                 <li>
-                  <b>Pivotal role in PDAX 0-1 launch</b>, establishing a strong
-                  Philippines market presence
+                  Founding engineer who <b>helped launch PDAX</b> into one of
+                  the top crypto exchanges in the Philippines
                 </li>
                 <li>
-                  <b>Led PDAX payments integration team</b>, overseeing major
-                  bank and e-wallet integration in The Philippines. Automated
-                  payments,
-                  <b>reducing processing time by 3 days</b>.
+                  Led payments integration with banks and e-wallets,{' '}
+                  <b>cutting settlement time from 3 days to real-time</b>
                 </li>
                 <li>
-                  Help Launch bonds.ph, allowed users to{' '}
-                  <b>buy government-issued bonds in minutes instead of weeks</b>
-                  .
+                  Built the trade engine and dashboards, improving reliability
+                  and user experience
+                </li>
+                <li>
+                  Developed and helped launch LOCQ, a product that enables{' '}
+                  <b>
+                    customers to purchase gas for the future at today’s prices
+                  </b>
                 </li>
               </ol>
             </VerticalTimelineElement>
@@ -192,16 +206,11 @@ const SkillsPage = () => {
                 Frontend Developer (Sep 2017 – Mar 2018)
               </h3>
               <h4 className="subtitle">Primus Software Corporation, India</h4>
-              <h6 className="desc">
-                Primus Software Corporation is a staffing and software
-                development company with an unwavering commitment to helping our
-                clients stay ahead of the curve.
-              </h6>
               <p>
-                As a Full Stack Developer, I engaged with clients, translated
-                their needs into solutions, and directed the development team.
-                Additionally, collaborated with the Business Development Team on
-                Proof of Concepts, aiding in securing new projects.
+                As a Full Stack Developer, translated client needs into
+                solutions, directed development teams, and collaborated with
+                Business Development on Proof of Concepts to secure new
+                projects.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement

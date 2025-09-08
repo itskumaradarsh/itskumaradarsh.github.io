@@ -48,8 +48,7 @@ const HomePage = () => {
             <span className="code">&nbsp;&lt;h1/&gt;</span>
           </div>
           <div className="bio">
-            senior full-stack engineer / blockchain enthusiast / one-time
-            founder
+            senior staff engineer / blockchain enthusiast / one-time founder
           </div>
         </div>
       </TagWrapper>

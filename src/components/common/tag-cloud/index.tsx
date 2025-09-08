@@ -41,6 +41,9 @@ const TagCloudRenderer = () => {
     { value: 'Kubernetes', count: 9 },
     { value: 'RabbitMQ', count: 8 },
     { value: 'Redis', count: 9 },
+    { value: 'AI', count: 7 },
+    { value: 'Temporal Workflow', count: 7 },
+    { value: 'Distributed Systems', count: 7 },
   ];
 
   const options = {
