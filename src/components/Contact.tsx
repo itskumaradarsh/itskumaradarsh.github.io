@@ -1,9 +1,8 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import { motion } from 'framer-motion';
 import { Mail, Linkedin, MapPin, Phone, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import { PERSONAL, fadeInUp, staggerContainer } from '@/lib/constants';
+import { PERSONAL } from '@/lib/constants';
 import SectionHeading from './SectionHeading';
 
 type FormStatus = 'idle' | 'sending' | 'sent' | 'error';
@@ -93,15 +92,8 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 max-w-5xl mx-auto">
           {/* Contact Form */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="lg:col-span-3"
-          >
-            <motion.form
-              variants={fadeInUp}
+          <div className="lg:col-span-3">
+            <form
               onSubmit={handleSubmit}
               className="space-y-5"
               noValidate
@@ -212,25 +204,18 @@ export default function Contact() {
                   </>
                 )}
               </button>
-            </motion.form>
-          </motion.div>
+            </form>
+          </div>
 
           {/* Contact Info */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="lg:col-span-2 space-y-6"
-          >
-            <motion.div variants={fadeInUp}>
+          <div className="lg:col-span-2 space-y-6">
+            <div>
               <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-6">
                 Contact Details
               </h3>
-            </motion.div>
+            </div>
 
-            <motion.a
-              variants={fadeInUp}
+            <a
               href={`mailto:${PERSONAL.email}`}
               className="flex items-start gap-4 p-4 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800/30 transition-colors group"
             >
@@ -245,12 +230,9 @@ export default function Contact() {
                   {PERSONAL.email}
                 </p>
               </div>
-            </motion.a>
+            </a>
 
-            <motion.div
-              variants={fadeInUp}
-              className="flex items-start gap-4 p-4 rounded-xl"
-            >
+            <div className="flex items-start gap-4 p-4 rounded-xl">
               <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center flex-shrink-0">
                 <Phone size={18} className="text-blue-600 dark:text-blue-400" />
               </div>
@@ -265,12 +247,9 @@ export default function Contact() {
                   {PERSONAL.phoneAlt}
                 </p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={fadeInUp}
-              className="flex items-start gap-4 p-4 rounded-xl"
-            >
+            <div className="flex items-start gap-4 p-4 rounded-xl">
               <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center flex-shrink-0">
                 <MapPin size={18} className="text-blue-600 dark:text-blue-400" />
               </div>
@@ -282,10 +261,9 @@ export default function Contact() {
                   {PERSONAL.location}
                 </p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.a
-              variants={fadeInUp}
+            <a
               href={PERSONAL.linkedin}
               target="_blank"
               rel="noopener noreferrer"
@@ -302,8 +280,8 @@ export default function Contact() {
                   Connect with me
                 </p>
               </div>
-            </motion.a>
-          </motion.div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

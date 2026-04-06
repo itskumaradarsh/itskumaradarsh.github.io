@@ -1,8 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { fadeInUp } from '@/lib/constants';
-
 interface SectionHeadingProps {
   title: string;
   subtitle?: string;
@@ -10,13 +5,7 @@ interface SectionHeadingProps {
 
 export default function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <motion.div
-      variants={fadeInUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
-      className="mb-16 text-center"
-    >
+    <div className="mb-16 text-center">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">
         {title}
       </h2>
@@ -26,6 +15,6 @@ export default function SectionHeading({ title, subtitle }: SectionHeadingProps)
         </p>
       )}
       <div className="mt-6 mx-auto w-20 h-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400" />
-    </motion.div>
+    </div>
   );
 }

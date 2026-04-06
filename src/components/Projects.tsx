@@ -1,7 +1,4 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { PROJECTS, fadeInUp, staggerContainer } from '@/lib/constants';
+import { PROJECTS } from '@/lib/constants';
 import SectionHeading from './SectionHeading';
 
 export default function Projects() {
@@ -13,17 +10,10 @@ export default function Projects() {
           subtitle="Selected projects that demonstrate scale, ownership, and impact"
         />
 
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          className="grid md:grid-cols-2 gap-6"
-        >
+        <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={fadeInUp}
               className={`glow-card p-6 lg:p-8 flex flex-col ${
                 index === 0 ? 'md:col-span-2' : ''
               }`}
@@ -88,9 +78,9 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

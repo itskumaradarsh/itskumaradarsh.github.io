@@ -1,7 +1,4 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { EXPERIENCE, fadeInUp, staggerContainer } from '@/lib/constants';
+import { EXPERIENCE } from '@/lib/constants';
 import SectionHeading from './SectionHeading';
 
 export default function Experience() {
@@ -17,17 +14,10 @@ export default function Experience() {
           {/* Timeline Line */}
           <div className="absolute left-[23px] top-0 bottom-0 w-px bg-neutral-200 dark:bg-neutral-800 hidden lg:block" />
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="space-y-8 lg:space-y-12"
-          >
+          <div className="space-y-8 lg:space-y-12">
             {EXPERIENCE.map((exp, index) => (
-              <motion.div
+              <div
                 key={index}
-                variants={fadeInUp}
                 className="relative lg:pl-16"
               >
                 {/* Timeline Dot */}
@@ -90,9 +80,9 @@ export default function Experience() {
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

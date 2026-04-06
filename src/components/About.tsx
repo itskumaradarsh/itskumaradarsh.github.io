@@ -1,8 +1,5 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { Briefcase, Rocket, Globe } from 'lucide-react';
-import { ABOUT, fadeInUp, staggerContainer } from '@/lib/constants';
+import { ABOUT } from '@/lib/constants';
 import SectionHeading from './SectionHeading';
 
 const highlightIcons = [Briefcase, Rocket, Globe, Briefcase];
@@ -19,13 +16,7 @@ export default function About() {
         {/* Top: Photo + Summary */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-16">
           {/* Photo - Left */}
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="lg:col-span-4 flex justify-center lg:justify-start"
-          >
+          <div className="lg:col-span-4 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[220px]">
               {/* Soft gradient glow behind photo */}
               <div
@@ -42,42 +33,28 @@ export default function About() {
                 />
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Summary - Right */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="lg:col-span-8 space-y-5"
-          >
+          <div className="lg:col-span-8 space-y-5">
             {ABOUT.summary.map((paragraph, i) => (
-              <motion.p
+              <p
                 key={i}
-                variants={fadeInUp}
                 className="text-base lg:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-justify hyphens-auto"
               >
                 {paragraph}
-              </motion.p>
+              </p>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Bottom: Highlights grid */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
-        >
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {ABOUT.highlights.map((highlight, i) => {
             const Icon = highlightIcons[i % highlightIcons.length];
             return (
-              <motion.div
+              <div
                 key={i}
-                variants={fadeInUp}
                 className="flex flex-col gap-3 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-100 dark:border-neutral-800/50"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
@@ -86,10 +63,10 @@ export default function About() {
                 <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
                   {highlight}
                 </p>
-              </motion.div>
+              </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

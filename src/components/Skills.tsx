@@ -1,7 +1,4 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { SKILLS, fadeInUp, staggerContainer } from '@/lib/constants';
+import { SKILLS } from '@/lib/constants';
 import SectionHeading from './SectionHeading';
 
 export default function Skills() {
@@ -13,19 +10,9 @@ export default function Skills() {
           subtitle="Tools and technologies I work with daily"
         />
 
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SKILLS.map((category, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="glow-card p-6"
-            >
+            <div key={index} className="glow-card p-6">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-4">
                 {category.name}
               </h3>
@@ -39,9 +26,9 @@ export default function Skills() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
