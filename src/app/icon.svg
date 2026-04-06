@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0a0a0a"/>
+  <text x="50%" y="50%"
+        font-family="ui-monospace, 'JetBrains Mono', Menlo, monospace"
+        font-size="240"
+        font-weight="800"
+        text-anchor="middle"
+        dy=".35em">
+    <tspan fill="#ffffff">AK</tspan>
+    <tspan fill="#3b82f6">/</tspan>
+  </text>
+</svg>

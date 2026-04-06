@@ -58,9 +58,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white antialiased`}
       >
