@@ -56,7 +56,7 @@ export default function About() {
               <motion.p
                 key={i}
                 variants={fadeInUp}
-                className="text-lg leading-relaxed text-neutral-600 dark:text-neutral-400"
+                className="text-base lg:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-justify hyphens-auto"
               >
                 {paragraph}
               </motion.p>
