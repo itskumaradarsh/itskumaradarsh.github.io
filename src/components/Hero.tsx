@@ -22,7 +22,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden pt-32 lg:pt-36 pb-12">
       {/* Background Effects */}
       <div className="absolute inset-0 hero-grid" />
       <div className="absolute inset-0 hero-mesh" />
@@ -37,12 +37,12 @@ export default function Hero() {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="relative z-10 section-container text-center py-32 lg:py-0"
+        className="relative z-10 section-container text-center"
       >
         {/* Name */}
         <motion.h1
           variants={fadeInUp}
-          className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight"
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight"
         >
           <span className="text-neutral-900 dark:text-white">{PERSONAL.name.split(' ')[0]}</span>
           <br />
@@ -115,22 +115,25 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.button
-          variants={fadeInUp}
-          onClick={scrollToAbout}
-          className="mt-16 mx-auto flex flex-col items-center gap-2 text-neutral-400 dark:text-neutral-600 hover:text-neutral-600 dark:hover:text-neutral-400 transition-colors cursor-pointer"
-          aria-label="Scroll to about section"
-        >
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <ArrowDown size={18} />
-          </motion.div>
-        </motion.button>
       </motion.div>
+
+      {/* Scroll Indicator */}
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.6 }}
+        onClick={scrollToAbout}
+        className="relative z-10 mt-20 lg:mt-24 mx-auto flex flex-col items-center gap-2 text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer w-full"
+        aria-label="Scroll to about section"
+      >
+        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <ArrowDown size={18} />
+        </motion.div>
+      </motion.button>
     </section>
   );
 }
