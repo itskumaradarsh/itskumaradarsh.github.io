@@ -10,8 +10,7 @@ export const PERSONAL = {
   phone: '+91 9599401658',
   phoneAlt: '+60 135308971',
   location: 'Kuala Lumpur, Malaysia',
-  // UPDATE: Replace with your actual LinkedIn URL
-  linkedin: 'https://www.linkedin.com/in/adarshkumar2k',
+  linkedin: 'https://www.linkedin.com/in/itskumaradarsh/',
   resumeFile: '/resume - Adarsh Kumar.pdf',
   siteUrl: 'https://itskumaradarsh.github.io',
 };
