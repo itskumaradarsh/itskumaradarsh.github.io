@@ -21,7 +21,6 @@ export const NAV_ITEMS = [
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Philosophy', href: '#philosophy' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -268,43 +267,6 @@ export const SKILLS: SkillCategory[] = [
   {
     name: 'Data & Analytics',
     items: ['Apache Spark', 'Flink', 'Databricks', 'Redash', 'Looker'],
-  },
-];
-
-// ============================================================
-// ENGINEERING PHILOSOPHY
-// ============================================================
-
-export interface PhilosophyItem {
-  title: string;
-  description: string;
-  icon: 'layers' | 'shield' | 'minimize' | 'users';
-}
-
-export const PHILOSOPHY: PhilosophyItem[] = [
-  {
-    title: 'Systems Over Features',
-    description:
-      'I don\'t build features in isolation. Every component I design considers failure modes, scaling characteristics, and how it fits into the broader architecture. Good systems are composed of good abstractions.',
-    icon: 'layers',
-  },
-  {
-    title: 'Reliability is a Feature',
-    description:
-      'Users don\'t notice reliability \u2014 they notice its absence. I build with circuit breakers, graceful degradation, and observability as first-class concerns, not afterthoughts.',
-    icon: 'shield',
-  },
-  {
-    title: 'Simplicity at Scale',
-    description:
-      'The best architecture is the one your team can understand, debug, and extend at 3 AM. I prefer proven patterns over clever solutions and optimize for long-term maintainability.',
-    icon: 'minimize',
-  },
-  {
-    title: 'Multiplying the Team',
-    description:
-      'Technical leadership is about multiplying the team\'s output, not just your own. I invest in code review culture, architecture documentation, and creating environments where engineers grow.',
-    icon: 'users',
   },
 ];
 
