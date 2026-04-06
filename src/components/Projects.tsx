@@ -17,7 +17,7 @@ export default function Projects() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid md:grid-cols-2 gap-6"
         >
           {PROJECTS.map((project, index) => (

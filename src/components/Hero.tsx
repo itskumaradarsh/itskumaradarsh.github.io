@@ -22,7 +22,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-32 lg:pt-36 pb-12">
+    <section className="relative min-h-screen overflow-hidden pt-24 lg:pt-36 pb-10">
       {/* Background Effects */}
       <div className="absolute inset-0 hero-grid" />
       <div className="absolute inset-0 hero-mesh" />
@@ -70,7 +70,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <motion.div
           variants={fadeInUp}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="mt-8 lg:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <a
             href={PERSONAL.resumeFile}
@@ -101,7 +101,7 @@ export default function Hero() {
         {/* Stats */}
         <motion.div
           variants={fadeInUp}
-          className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-3xl mx-auto"
+          className="mt-12 lg:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8 max-w-3xl mx-auto"
         >
           {HERO_STATS.map((stat) => (
             <div key={stat.label} className="text-center">
@@ -123,7 +123,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
         onClick={scrollToAbout}
-        className="relative z-10 mt-20 lg:mt-24 mx-auto flex flex-col items-center gap-2 text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer w-full"
+        className="relative z-10 mt-10 lg:mt-24 mx-auto flex flex-col items-center gap-2 text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer w-full"
         aria-label="Scroll to about section"
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>

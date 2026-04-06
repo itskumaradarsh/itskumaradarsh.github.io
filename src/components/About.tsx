@@ -23,7 +23,7 @@ export default function About() {
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
+            viewport={{ once: true, amount: 0.1 }}
             className="lg:col-span-4 flex justify-center lg:justify-start"
           >
             <div className="relative w-full max-w-[220px]">
@@ -49,7 +49,7 @@ export default function About() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
+            viewport={{ once: true, amount: 0.1 }}
             className="lg:col-span-8 space-y-5"
           >
             {ABOUT.summary.map((paragraph, i) => (
@@ -69,7 +69,7 @@ export default function About() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {ABOUT.highlights.map((highlight, i) => {

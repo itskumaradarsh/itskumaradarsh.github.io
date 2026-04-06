@@ -14,7 +14,7 @@ export default function SectionHeading({ title, subtitle }: SectionHeadingProps)
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-80px' }}
+      viewport={{ once: true, amount: 0.1 }}
       className="mb-16 text-center"
     >
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">

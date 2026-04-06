@@ -17,7 +17,7 @@ export default function Skills() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {SKILLS.map((category, index) => (

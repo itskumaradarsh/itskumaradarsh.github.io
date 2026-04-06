@@ -97,7 +97,7 @@ export default function Contact() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
+            viewport={{ once: true, amount: 0.1 }}
             className="lg:col-span-3"
           >
             <motion.form
@@ -220,7 +220,7 @@ export default function Contact() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
+            viewport={{ once: true, amount: 0.1 }}
             className="lg:col-span-2 space-y-6"
           >
             <motion.div variants={fadeInUp}>
