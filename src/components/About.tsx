@@ -11,6 +11,7 @@ export default function About() {
         <SectionHeading
           title="About Me"
           subtitle="A decade of building high-stakes systems at scale"
+          number="01"
         />
 
         {/* Top: Photo + Summary */}
@@ -40,7 +41,7 @@ export default function About() {
             {ABOUT.summary.map((paragraph, i) => (
               <p
                 key={i}
-                className="text-base lg:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-justify hyphens-auto"
+                className="text-sm lg:text-base leading-relaxed text-neutral-600 dark:text-neutral-400 text-justify hyphens-auto"
               >
                 {paragraph}
               </p>

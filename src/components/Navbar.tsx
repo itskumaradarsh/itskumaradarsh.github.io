@@ -59,25 +59,30 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-lg font-bold tracking-tight text-neutral-900 dark:text-white hover:opacity-80 transition-opacity"
+            className="font-mono text-base font-semibold tracking-tight text-neutral-900 dark:text-white hover:opacity-80 transition-opacity"
           >
+            <span className="text-neutral-500 dark:text-neutral-600">&lt;</span>
             AK
-            <span className="gradient-text">.</span>
+            <span className="text-blue-500"> /</span>
+            <span className="text-neutral-500 dark:text-neutral-600">&gt;</span>
           </button>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
-            {NAV_ITEMS.map((item) => (
+            {NAV_ITEMS.map((item, i) => (
               <button
                 key={item.href}
                 onClick={() => scrollTo(item.href)}
-                className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                className={`px-3 py-2 font-mono text-sm rounded-lg transition-colors ${
                   activeSection === item.href.replace('#', '')
-                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10'
-                    : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50'
+                    ? 'text-blue-500 dark:text-blue-400'
+                    : 'text-neutral-500 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-white'
                 }`}
               >
-                {item.label}
+                <span className="text-neutral-400 dark:text-neutral-700 mr-1">
+                  {String(i + 1).padStart(2, '0')}.
+                </span>
+                {item.label.toLowerCase()}
               </button>
             ))}
           </div>
@@ -118,17 +123,20 @@ export default function Navbar() {
             className="fixed inset-x-0 top-16 z-40 lg:hidden bg-white/95 dark:bg-neutral-950/95 backdrop-blur-xl border-b border-neutral-200 dark:border-neutral-800"
           >
             <div className="section-container py-4 flex flex-col gap-1">
-              {NAV_ITEMS.map((item) => (
+              {NAV_ITEMS.map((item, i) => (
                 <button
                   key={item.href}
                   onClick={() => scrollTo(item.href)}
-                  className={`px-4 py-3 text-left text-sm font-medium rounded-lg transition-colors ${
+                  className={`px-4 py-3 text-left font-mono text-sm rounded-lg transition-colors ${
                     activeSection === item.href.replace('#', '')
-                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10'
-                      : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50'
+                      ? 'text-blue-500 dark:text-blue-400 bg-blue-500/10'
+                      : 'text-neutral-500 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/50'
                   }`}
                 >
-                  {item.label}
+                  <span className="text-neutral-400 dark:text-neutral-700 mr-2">
+                    {String(i + 1).padStart(2, '0')}.
+                  </span>
+                  {item.label.toLowerCase()}
                 </button>
               ))}
               <a

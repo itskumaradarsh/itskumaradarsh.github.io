@@ -88,6 +88,7 @@ export default function Contact() {
         <SectionHeading
           title="Get in Touch"
           subtitle="Have a project in mind or want to connect? I'd love to hear from you."
+          number="05"
         />
 
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 max-w-5xl mx-auto">
@@ -100,8 +101,8 @@ export default function Contact() {
             >
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1.5">
-                  Name
+                <label htmlFor="name" className="block font-mono text-xs text-neutral-500 dark:text-neutral-500 mb-1.5">
+                  <span className="text-blue-500">const</span> name <span className="text-neutral-400 dark:text-neutral-700">=</span>
                 </label>
                 <input
                   id="name"
@@ -126,8 +127,8 @@ export default function Contact() {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1.5">
-                  Email
+                <label htmlFor="email" className="block font-mono text-xs text-neutral-500 dark:text-neutral-500 mb-1.5">
+                  <span className="text-blue-500">const</span> email <span className="text-neutral-400 dark:text-neutral-700">=</span>
                 </label>
                 <input
                   id="email"
@@ -152,8 +153,8 @@ export default function Contact() {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1.5">
-                  Message
+                <label htmlFor="message" className="block font-mono text-xs text-neutral-500 dark:text-neutral-500 mb-1.5">
+                  <span className="text-blue-500">const</span> message <span className="text-neutral-400 dark:text-neutral-700">=</span>
                 </label>
                 <textarea
                   id="message"
@@ -185,22 +186,22 @@ export default function Contact() {
                 {status === 'sending' ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Sending...
+                    <span className="font-mono">sending...</span>
                   </>
                 ) : status === 'sent' ? (
                   <>
                     <CheckCircle size={18} />
-                    Message Sent!
+                    <span className="font-mono">message_sent</span>
                   </>
                 ) : status === 'error' ? (
                   <>
                     <AlertCircle size={18} />
-                    Failed — Try Again
+                    <span className="font-mono">failed --retry</span>
                   </>
                 ) : (
                   <>
                     <Send size={18} />
-                    Send Message
+                    <span className="font-mono">./send.sh</span>
                   </>
                 )}
               </button>
@@ -210,8 +211,9 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-6">
-                Contact Details
+              <h3 className="font-mono text-sm text-neutral-500 dark:text-neutral-500 mb-6">
+                <span className="text-neutral-400 dark:text-neutral-700">{'// '}</span>
+                contact_details
               </h3>
             </div>
 

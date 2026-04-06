@@ -39,6 +39,17 @@ export default function Hero() {
         animate="visible"
         className="relative z-10 section-container text-center"
       >
+        {/* Terminal prompt */}
+        <motion.div
+          variants={fadeInUp}
+          className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-neutral-500 dark:text-neutral-500 mb-6"
+        >
+          <span className="text-emerald-500">$</span>
+          <span className="text-neutral-400 dark:text-neutral-600">cat</span>
+          <span className="text-blue-500">~/adarsh/about.md</span>
+          <span className="inline-block w-2 h-4 bg-blue-500 animate-pulse ml-1" />
+        </motion.div>
+
         {/* Name */}
         <motion.h1
           variants={fadeInUp}
@@ -49,23 +60,28 @@ export default function Hero() {
           <span className="gradient-text">{PERSONAL.name.split(' ')[1]}</span>
         </motion.h1>
 
-        {/* Title */}
+        {/* Title with mono accent */}
         <motion.p
           variants={fadeInUp}
-          className="mt-6 text-xl sm:text-2xl font-medium text-neutral-500 dark:text-neutral-400"
+          className="mt-6 font-mono text-sm sm:text-base text-neutral-500 dark:text-neutral-400"
         >
+          <span className="text-neutral-400 dark:text-neutral-600">{'// '}</span>
           {PERSONAL.title}
         </motion.p>
 
-        {/* Tagline */}
-        <motion.p
+        {/* Tagline as JSDoc */}
+        <motion.div
           variants={fadeInUp}
-          className="mt-4 text-lg text-neutral-600 dark:text-neutral-500 max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 flex justify-center font-mono text-[13px] sm:text-sm leading-relaxed text-neutral-500 dark:text-neutral-500"
         >
-          Engineering financial infrastructure that serves millions across Southeast Asia.
-          <br className="hidden sm:block" />
-          {' '}From zero-to-one startups to platforms processing $15B+ annually.
-        </motion.p>
+          <pre className="text-left whitespace-pre-wrap">
+<span className="text-neutral-400 dark:text-neutral-700">{'/**'}</span>
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>Engineering financial infrastructure that serves
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>millions across Southeast Asia. From zero-to-one
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>startups to platforms processing <span className="text-emerald-500">$15B+</span> annually.
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' */'}</span>
+          </pre>
+        </motion.div>
 
         {/* CTA Buttons */}
         <motion.div
@@ -105,11 +121,11 @@ export default function Hero() {
         >
           {HERO_STATS.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold gradient-text">
+              <div className="font-mono text-3xl lg:text-4xl font-bold gradient-text">
                 {stat.value}
               </div>
-              <div className="mt-1 text-sm text-neutral-500 dark:text-neutral-500">
-                {stat.label}
+              <div className="mt-1 font-mono text-xs text-neutral-500 dark:text-neutral-500">
+                {stat.label.toLowerCase().replace(/ /g, '_')}
               </div>
             </div>
           ))}
@@ -126,7 +142,9 @@ export default function Hero() {
         className="relative z-10 mt-10 lg:mt-24 mx-auto flex flex-col items-center gap-2 text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer w-full"
         aria-label="Scroll to about section"
       >
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <span className="font-mono text-xs">
+          <span className="text-emerald-500">$</span> scroll --down
+        </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
