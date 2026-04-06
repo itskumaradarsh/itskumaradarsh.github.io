@@ -1,10 +1,53 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Mail, Linkedin } from 'lucide-react';
 import { PERSONAL, HERO_STATS, fadeInUp, staggerContainer } from '@/lib/constants';
 
+// Terminal prompt segments typed out character by character
+const TERMINAL_SEGMENTS = [
+  { text: '$ ', className: 'text-emerald-500' },
+  { text: 'cat ', className: 'text-neutral-400 dark:text-neutral-600' },
+  { text: '~/adarsh/about.md', className: 'text-blue-500' },
+];
+const TOTAL_CHARS = TERMINAL_SEGMENTS.reduce((n, s) => n + s.text.length, 0);
+
 export default function Hero() {
+  const [typedCount, setTypedCount] = useState(0);
+
+  // Type out the terminal command after the hero fade-in finishes
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval> | undefined;
+    const startDelay = setTimeout(() => {
+      let i = 0;
+      interval = setInterval(() => {
+        i += 1;
+        setTypedCount(i);
+        if (i >= TOTAL_CHARS && interval) clearInterval(interval);
+      }, 75);
+    }, 700);
+
+    return () => {
+      clearTimeout(startDelay);
+      if (interval) clearInterval(interval);
+    };
+  }, []);
+
+  // Render visible characters across colored segments
+  const renderTyped = () => {
+    let remaining = typedCount;
+    return TERMINAL_SEGMENTS.map((seg, i) => {
+      const visible = seg.text.slice(0, remaining);
+      remaining = Math.max(0, remaining - seg.text.length);
+      return (
+        <span key={i} className={seg.className}>
+          {visible}
+        </span>
+      );
+    });
+  };
+
   const scrollToAbout = () => {
     const el = document.getElementById('about');
     if (el) {
@@ -39,15 +82,14 @@ export default function Hero() {
         animate="visible"
         className="relative z-10 section-container text-center"
       >
-        {/* Terminal prompt */}
+        {/* Terminal prompt - types out on load */}
         <motion.div
           variants={fadeInUp}
-          className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-neutral-500 dark:text-neutral-500 mb-6"
+          className="font-mono text-xs sm:text-sm mb-6 inline-flex items-center whitespace-pre"
+          aria-label="cat ~/adarsh/about.md"
         >
-          <span className="text-emerald-500">$</span>
-          <span className="text-neutral-400 dark:text-neutral-600">cat</span>
-          <span className="text-blue-500">~/adarsh/about.md</span>
-          <span className="inline-block w-2 h-4 bg-blue-500 animate-pulse ml-1" />
+          {renderTyped()}
+          <span className="inline-block w-[7px] h-[1em] align-middle bg-blue-500 ml-0.5 animate-blink" />
         </motion.div>
 
         {/* Name */}
