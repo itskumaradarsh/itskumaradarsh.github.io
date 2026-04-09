@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { Providers } from '@/components/Providers';
 import './globals.css';
@@ -62,6 +63,11 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white antialiased`}
       >
         <Providers>{children}</Providers>
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          strategy="afterInteractive"
+          data-cf-beacon='{"token": "7bf53ded20364bbca3ef80391df724c5"}'
+        />
       </body>
     </html>
   );
