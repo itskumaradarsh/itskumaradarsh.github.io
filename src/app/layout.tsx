@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Adarsh Kumar | Senior Staff Software Engineer',
   description:
-    'Software engineer with 10+ years building financial platforms, payment systems, and distributed systems at scale across Southeast Asia. Specialized in platform reliability, high-throughput backend services, and engineering leadership.',
+    'Senior software engineer with 10 years building and scaling regulated fintech platforms, payment systems, and crypto exchanges across Southeast Asia. Specialized in distributed systems, payment infrastructure, and high-throughput backend services.',
   keywords: [
     'Senior Staff Engineer',
     'Software Engineer',
