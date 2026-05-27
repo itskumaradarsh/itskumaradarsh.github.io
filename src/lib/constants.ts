@@ -32,15 +32,15 @@ export const HERO_STATS = [
 
 export const ABOUT = {
   summary: [
-    'I build systems that power financial infrastructure at scale. Over the past decade, I\'ve designed and shipped platforms that process billions in transactions, serve hundreds of thousands of users, and operate across multiple countries in Southeast Asia.',
-    'From co-founding a venture-backed startup to leading platform modernization at regulated fintech companies, I\'ve consistently taken ownership of complex technical challenges and turned them into reliable, scalable solutions.',
-    'I\'m a strong individual contributor who thinks in systems. I care deeply about reliability, developer experience, and building teams that ship with confidence.',
+    'I\'m a senior software engineer with 10 years of experience building and scaling regulated fintech platforms, payment systems, and crypto exchanges across Southeast Asia. I specialize in distributed systems, payment infrastructure, and high-throughput backend services.',
+    'I have a track record of taking systems from zero to millions of users, co-founding a venture-backed startup, and leading engineering teams across multiple countries.',
+    'Above all, I\'m a strong individual contributor with deep technical acumen and a product-oriented mindset.',
   ],
   highlights: [
-    'Led monolith-to-microservices migration for 500K+ users with zero downtime',
-    'Built real-time payment routing processing $15B+ annually across 3 countries',
-    'Co-founded and scaled a SaaS startup to $1.37M GMV with $480K in funding',
-    'Founding engineer of a top-3 regulated crypto exchange in the Philippines',
+    'Led monolith-to-microservices migration for 500K+ users across 5 SEA markets with zero downtime',
+    'Built real-time payment routing processing $15B+ annually across 30+ channels in 3 countries',
+    'Co-founded and scaled a SaaS startup to $1.37M GMV with $480K in pre-seed funding',
+    'Founding engineer of a top-3 BSP-regulated crypto exchange in the Philippines',
   ],
 };
 
@@ -70,13 +70,14 @@ export const EXPERIENCE: ExperienceItem[] = [
       { title: 'Senior Staff Engineer', period: 'Apr 2024 \u2013 Present' },
     ],
     highlights: [
-      'Led decomposition of a monolithic platform serving 500K+ users across 5 markets into 12+ microservices with zero downtime migration',
-      'Reduced release cycles by 40% and enabled the platform to handle 3x traffic spikes during market volatility',
-      'Cut infrastructure costs by 30% (~$180K/year) through automated resource scheduling and Terraform-based governance',
-      'Introduced MCP-based automated code review and test generation, boosting team shipping speed by 25%',
-      'Defined API design standards across all services \u2014 versioned contracts, OpenAPI specs, consistent error handling',
+      'Decomposed a monolith serving 500K+ users across 5 SEA markets into 12+ microservices with Kafka event messaging \u2014 a zero-downtime migration that cut release cycles 40% and enabled 3x traffic spike handling during market volatility',
+      'Own end-to-end deposit, cash-in, and withdrawal flows for 500K+ users across 5 SEA markets, with AML transaction monitoring, screening, and regulatory reporting aligned to each market\u2019s central bank framework',
+      'Consolidated KYC/auth from an 8-screen to a 4-screen flow with OAuth2 + MFA and parallelized background checks \u2014 signup time down 35%, conversions 10% over target',
+      'Introduced MCP-based automated code review and test generation, clearing the senior-engineer PR review bottleneck \u2014 review turnaround down 50%, team shipping speed up 25%',
+      'Defined and enforced API standards across 12+ services \u2014 versioned contracts, OpenAPI specs, consistent error handling, and pagination',
+      'Cut AWS staging costs 30% (~$180K/year) via automated resource scheduling, right-sizing with Datadog utilization metrics, and Terraform cost tagging',
     ],
-    technologies: ['NestJS', 'Kafka', 'Kubernetes', 'Terraform', 'PostgreSQL', 'Datadog', 'AWS'],
+    technologies: ['Node.js', 'React Native', 'Go', 'Temporal', 'Kafka', 'PostgreSQL', 'MongoDB', 'Redis', 'AWS', 'Kubernetes', 'Datadog', 'Sentry'],
   },
   {
     company: 'Xendit',
@@ -84,30 +85,32 @@ export const EXPERIENCE: ExperienceItem[] = [
     badge: 'YC S15',
     roles: [
       { title: 'Technical Lead', period: 'Sep 2022 \u2013 Feb 2024' },
-      { title: 'Senior Software Engineer', period: 'Feb 2021 \u2013 Aug 2022' },
+      { title: 'Senior Software Engineer', period: 'Feb 2021 \u2013 Aug 2021' },
     ],
     highlights: [
-      'Built a real-time payment routing engine with automatic failover across 30+ channels \u2014 processing time from 8s to 2.4s, success rate from 88% to 97%',
-      'Designed fault isolation layer achieving 99.99% platform availability at 10K+ QPS during peak hours',
-      'Optimized storage for 500M+ transaction records \u2014 S3 costs down 65%, DB costs down 40%, p99 latency under 200ms',
-      'Built unified notification service across WhatsApp, SMS, Viber, and email with 99.5% delivery rate for 10M+ monthly messages',
-      'Led and mentored a 6-person engineering team, driving 35% increase in delivery velocity',
+      'Built a real-time payment routing engine with channel health scoring and automatic failover across 30+ bank and e-wallet integrations in 3 countries on $15B+/year volume \u2014 processing time 8s \u2192 2.4s, success rate 88% \u2192 97%',
+      'Built a fault isolation layer with channel circuit breakers and graceful degradation during 10K+ QPS peaks \u2014 failed transactions down 250%, platform availability 99.99%',
+      'Optimized 500M+ transaction records with S3 lifecycle tiering, DB indexes, and analytics read replicas \u2014 S3 costs down 65%, DB costs down 40%, p99 latency under 200ms',
+      'Built a unified transactional notification service across WhatsApp, SMS, Viber, and email with an automatic fallback chain \u2014 99.5% delivery across 10M+ monthly notifications',
+      'Implemented payout retry and reconciliation using the outbox pattern and idempotency keys (PCI-DSS aligned) \u2014 zero lost or double-processed transactions even during partner bank outages',
+      'Led a 6-person engineering team and technical hiring; introduced TDD, code review standards, and sprint retros \u2014 delivery velocity up 35% over two quarters',
     ],
-    technologies: ['Node.js', 'Kafka', 'Redis', 'PostgreSQL', 'DynamoDB', 'Datadog', 'Grafana', 'AWS'],
+    technologies: ['Node.js', 'Go', 'PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'AWS', 'Datadog', 'Sentry', 'Splunk', 'Databricks', 'Redash'],
   },
   {
     company: 'On Demand Deals',
     location: 'Manila, Philippines',
     roles: [
-      { title: 'Co-Founder & CTO', period: 'May 2021 \u2013 Sep 2022' },
+      { title: 'Co-Founder & CTO', period: 'Jul 2021 \u2013 Sep 2022' },
     ],
     highlights: [
-      'Co-founded a SaaS platform for the F&B industry \u2014 owned all technical decisions, hiring, and product delivery end-to-end',
-      'Built the entire platform solo initially, then hired and managed a team of 4 engineers',
-      'Raised $480K pre-seed from Iterative (YC for SEA) and Accelerating Asia',
-      'Scaled to 50+ shop locations across Manila, hitting $1.37M GMV with 200% month-over-month growth',
+      'Co-founded a SaaS platform for F&B businesses \u2014 owned all technical decisions, hiring, and product delivery end-to-end',
+      'Built the entire platform solo initially, then hired and managed a team of 4 engineers; kept the stack deliberately simple to move fast',
+      'Closed $480K pre-seed from Iterative (YC for Southeast Asia) and Accelerating Asia; led the financial model and technical due diligence',
+      'Scaled to 50+ shop locations across Manila in 6 months \u2014 $1.37M GMV with 200% month-over-month growth',
+      'Managed payment provider, POS integrator, and delivery partner relationships; negotiated technical integrations and commercial terms',
     ],
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'CI/CD'],
+    technologies: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'AWS', 'Terraform', 'Kafka'],
   },
   {
     company: 'PDAX',
@@ -117,12 +120,14 @@ export const EXPERIENCE: ExperienceItem[] = [
       { title: 'Software Engineer', period: 'Mar 2018 \u2013 Nov 2019' },
     ],
     highlights: [
-      'Founding engineer \u2014 built the platform from scratch, grew PDAX into a top-3 regulated crypto exchange in the Philippines',
-      'Built the core trade matching engine handling 5K+ concurrent orders with sub-100ms latency',
-      'Integrated major Philippine banks and e-wallets for fiat on/off-ramps, reducing settlement from 3 days to real-time',
-      'Designed and launched LOCQ \u2014 a first-of-its-kind fuel futures product on the blockchain',
+      'Founding engineer \u2014 joined pre-platform and helped grow PDAX into a top-3 BSP-regulated crypto exchange in the Philippines',
+      'Built the core trade matching engine handling 5K+ concurrent orders at sub-100ms matching latency, designed for horizontal scaling during market volatility',
+      'Integrated major Philippine banks (BDO, BPI, UnionBank) and e-wallets (GCash, PayMaya) for fiat deposits/withdrawals \u2014 settlement from 3 days to real-time',
+      'Designed and launched LOCQ \u2014 a first-of-its-kind blockchain-based fuel futures product that drew a wave of non-crypto-native users',
+      'Built internal wallet and ledger infrastructure with double-entry accounting across crypto and fiat \u2014 full auditability for BSP compliance and KYC/AML monitoring',
+      'Optimized the trade engine and API layer with connection pooling, Redis query caching, and graceful degradation \u2014 99.9%+ uptime during major market events',
     ],
-    technologies: ['Node.js', 'Redis', 'PostgreSQL', 'React', 'WebSocket', 'Solidity'],
+    technologies: ['Node.js', 'PostgreSQL', 'TimescaleDB', 'Redis', 'React Native', 'Solidity', 'AWS', 'Web3', 'ERC20'],
   },
   {
     company: 'Primus Software Corporation',
@@ -132,8 +137,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     ],
     highlights: [
       'Built enterprise web and mobile applications for clients in healthcare, logistics, and education',
-      'Led 3 proof-of-concept projects end-to-end for business development \u2014 all three helped win new client contracts',
-      'Owned frontend architecture and API design on a logistics tracking platform with a team of 5',
+      'Led 3 pre-sales proof-of-concept projects end-to-end \u2014 all three helped win new client contracts',
     ],
     technologies: ['React', 'Angular', 'Node.js', 'PostgreSQL'],
   },
@@ -157,7 +161,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     title: 'Real-time Payment Routing Engine',
     company: 'Xendit',
-    description: 'Intelligent payment routing system with automatic failover across 30+ bank and e-wallet integrations in 3 countries.',
+    description: 'Real-time routing engine with channel health scoring and automatic failover across 30+ bank and e-wallet integrations in 3 countries, on $15B+/year of payment volume.',
     problem: 'Manual routing meant if a bank channel went down, someone had to notice and switch traffic. Processing was slow and unreliable.',
     impact: [
       'Processing time reduced from 8s to 2.4s',
@@ -186,7 +190,7 @@ export const PROJECTS: ProjectItem[] = [
     description: 'Full-stack SaaS platform for the F&B industry \u2014 restaurants, cloud kitchens, and QSR chains across Manila.',
     problem: 'The Philippine F&B industry lacked a unified digital platform for order management, analytics, and growth.',
     impact: [
-      '$480K raised from Iterative & Accelerating Asia',
+      '$480K pre-seed raised from Iterative (YC for SEA) & Accelerating Asia',
       '50+ shop locations onboarded in 6 months',
       '$1.37M GMV with 200% month-over-month growth',
     ],
@@ -196,11 +200,11 @@ export const PROJECTS: ProjectItem[] = [
   {
     title: 'Crypto Trade Matching Engine',
     company: 'PDAX',
-    description: 'Core trade matching engine for a regulated cryptocurrency exchange, designed for horizontal scaling during market volatility.',
+    description: 'Core trade matching engine for a BSP-regulated cryptocurrency exchange, designed for horizontal scaling during market volatility.',
     problem: 'Building a regulated crypto exchange from scratch in the Philippines with no existing infrastructure.',
     impact: [
       'Sub-100ms matching latency at 5K+ concurrent orders',
-      'Grew to top-3 regulated exchange in the Philippines',
+      'Grew to a top-3 BSP-regulated exchange in the Philippines',
       '99.9% platform uptime during major market events',
     ],
     technologies: ['Node.js', 'Redis', 'PostgreSQL', 'WebSocket', 'Solidity'],
@@ -233,39 +237,35 @@ export interface SkillCategory {
 export const SKILLS: SkillCategory[] = [
   {
     name: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'Golang', 'Java', 'Solidity'],
+    items: ['JavaScript', 'TypeScript', 'Python', 'Go', 'Solidity'],
   },
   {
-    name: 'Backend',
-    items: ['NestJS', 'Node.js', 'Temporal Workflows', 'n8n', 'REST APIs', 'GraphQL'],
+    name: 'Backend & Frontend',
+    items: ['Node.js', 'NestJS', 'Temporal Workflows', 'REST', 'gRPC', 'n8n', 'React', 'React Native', 'Redux'],
   },
   {
     name: 'AI & LLM',
-    items: ['MCP', 'RAG Pipelines', 'Vector DBs', 'Pinecone', 'pgvector', 'Prompt Engineering', 'Agentic Workflows'],
+    items: ['MCP', 'RAG Pipelines', 'Vector DBs', 'Pinecone', 'pgvector', 'LLM Context Management', 'Agentic Workflows'],
   },
   {
-    name: 'Databases',
-    items: ['PostgreSQL', 'MongoDB', 'DynamoDB', 'Redis', 'ClickHouse'],
+    name: 'Data & Storage',
+    items: ['PostgreSQL', 'MongoDB', 'DynamoDB', 'Redis', 'Pinecone', 'TimescaleDB'],
   },
   {
     name: 'Cloud & Infrastructure',
-    items: ['AWS', 'Kubernetes', 'Terraform', 'Helm', 'CI/CD', 'Docker'],
+    items: ['AWS', 'Kubernetes', 'Terraform', 'Helm', 'Docker', 'CI/CD'],
   },
   {
     name: 'Messaging & Streaming',
-    items: ['Apache Kafka', 'RabbitMQ', 'Amazon SQS'],
+    items: ['Apache Kafka', 'RabbitMQ', 'AWS SQS', 'Flink'],
   },
   {
     name: 'Observability',
-    items: ['Datadog', 'Grafana', 'PagerDuty', 'Sentry', 'Splunk'],
-  },
-  {
-    name: 'Frontend',
-    items: ['React', 'React Native', 'Next.js', 'Redux', 'Angular', 'Tailwind CSS'],
+    items: ['Datadog', 'Grafana', 'PagerDuty', 'OpsGenie', 'Sentry', 'Splunk'],
   },
   {
     name: 'Data & Analytics',
-    items: ['Apache Spark', 'Flink', 'Databricks', 'Redash', 'Looker'],
+    items: ['Databricks', 'Redash', 'Looker', 'Metabase'],
   },
 ];
 
