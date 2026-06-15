@@ -111,6 +111,17 @@ export default function Hero() {
           {PERSONAL.title}
         </motion.p>
 
+        {/* Availability badge */}
+        <motion.div variants={fadeInUp} className="mt-5 flex justify-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 font-mono text-xs sm:text-[13px] text-emerald-700 dark:text-emerald-400">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            </span>
+            {PERSONAL.availability}
+          </span>
+        </motion.div>
+
         {/* Tagline as JSDoc */}
         <motion.div
           variants={fadeInUp}
@@ -118,9 +129,9 @@ export default function Hero() {
         >
           <pre className="text-left whitespace-pre-wrap">
 <span className="text-neutral-400 dark:text-neutral-700">{'/**'}</span>
-{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>Engineering financial infrastructure that serves
-{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>millions across Southeast Asia. From zero-to-one
-{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>startups to platforms processing <span className="text-emerald-500">$15B+</span> annually.
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>I build the systems that move money — payment
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>rails, ledgers, and high-throughput core
+{'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' * '}</span>infrastructure processing <span className="text-emerald-500">$15B+</span> annually.
 {'\n'}<span className="text-neutral-400 dark:text-neutral-700">{' */'}</span>
           </pre>
         </motion.div>
