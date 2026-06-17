@@ -6,7 +6,7 @@
 export const PERSONAL = {
   name: 'Adarsh Kumar',
   title: 'Senior Staff Software Engineer',
-  availability: 'Relocating to Europe · Targeting NL & DE',
+  availability: 'Relocating to the UK · Open to sponsorship',
   email: 'adarshkumar2k@gmail.com',
   phone: '+91 9599401658',
   phoneAlt: '+60 135308971',
@@ -35,7 +35,7 @@ export const ABOUT = {
   summary: [
     'I build the systems that move money — payment rails, ledger systems, and high-throughput core infrastructure. Over the past decade I\'ve engineered and scaled distributed platforms processing billions in transactions for 500K+ users across five highly regulated Southeast Asian markets.',
     'My core expertise spans payment infrastructure and core banking (multi-bank routing with automated failover, real-time reconciliation, idempotency, and PCI-DSS-aligned systems), distributed systems and reliability (Kafka-driven event architectures sustaining 99.99% availability at 10K+ QPS), and regulated fintech and compliance (AML monitoring, transaction screening, and KYC pipelines built to central-bank standards).',
-    'I operate as a hands-on technical leader — defining the architecture, design contracts, and reliability patterns teams build upon while staying active on critical-path code. I\'m now relocating to Europe (targeting the Netherlands & Germany) and open to Senior, Staff, and Principal Engineer roles in Payments, Fintech, and high-scale platform teams.',
+    'I operate as a hands-on technical leader — defining the architecture, design contracts, and reliability patterns teams build upon while staying active on critical-path code. I\'m now relocating to the UK (open to relocation and sponsorship) and open to Senior, Staff, and Principal Engineer roles in Payments, Fintech, and high-scale platform teams.',
   ],
   highlights: [
     'Led monolith-to-microservices migration for 500K+ users across 5 SEA markets with zero downtime',
@@ -98,7 +98,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Implemented payout retry and reconciliation using the outbox pattern and idempotency keys (PCI-DSS aligned) \u2014 zero lost or double-processed transactions even during partner bank outages',
       'Built real-time Datadog and Grafana dashboards for payment success rates, partner health, and circuit-breaker states \u2014 accelerating incident detection across all channels',
       'Core member of the Architecture Review Group \u2014 standardized cross-team engineering patterns and cut review turnaround 80% via templates and an async review process',
-      'Led a 6-person engineering team and technical hiring; introduced TDD, code review standards, and sprint retros \u2014 delivery velocity up 35% over two quarters',
+      'Led a 12-person engineering team and technical hiring; introduced TDD, code review standards, and sprint retros \u2014 delivery velocity up 35% over two quarters',
     ],
     technologies: ['Node.js', 'Go', 'PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'AWS', 'Datadog', 'Sentry', 'Splunk', 'Databricks', 'Redash'],
   },

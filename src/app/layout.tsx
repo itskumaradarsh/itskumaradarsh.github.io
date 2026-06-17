@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Adarsh Kumar | Senior Staff Software Engineer',
   description:
-    'I build the systems that move money — payment rails, ledger systems, and high-throughput core infrastructure. A decade scaling distributed fintech platforms processing billions in transactions for 500K+ users across five regulated Southeast Asian markets. Relocating to Europe; open to Senior, Staff, and Principal Engineer roles in Payments, Fintech, and high-scale platform teams.',
+    'I build the systems that move money — payment rails, ledger systems, and high-throughput core infrastructure. A decade scaling distributed fintech platforms processing billions in transactions for 500K+ users across five regulated Southeast Asian markets. Relocating to the UK; open to Senior, Staff, and Principal Engineer roles in Payments, Fintech, and high-scale platform teams.',
   keywords: [
     'Senior Staff Engineer',
     'Software Engineer',
